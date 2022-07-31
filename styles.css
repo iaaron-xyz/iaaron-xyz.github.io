@@ -4,6 +4,10 @@ body {
     font-family: 'JetBrains Mono';
 }
 
+h1 {
+    text-align: center;
+}
+
 /* Links */
 a {
     text-decoration: None;
