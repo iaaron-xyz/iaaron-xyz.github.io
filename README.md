@@ -1,2 +1,5 @@
 # iaaron-xyz.github.io
-My homepage on github
+
+homepage: iaaron-xyz@github.io
+
+Currently under construction!
