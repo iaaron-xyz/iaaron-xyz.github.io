@@ -3,3 +3,13 @@ body {
     color: #f1f1f1;
     font-family: 'JetBrains Mono';
 }
+
+/* Links */
+a {
+    text-decoration: None;
+    color: #919191;
+    font-weight: bold;
+}
+a:hover {
+    color: #e1e1e1;
+}
