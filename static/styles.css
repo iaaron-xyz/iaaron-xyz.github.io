@@ -17,3 +17,14 @@ a {
 a:hover {
     color: #e1e1e1;
 }
+.title-2{
+    margin: 0;
+}
+.sub-title {
+    margin: 0;
+    font-weight: lighter;
+    color: #a1a1a1;
+}
+.about-section {
+    margin: 5% 30% 5% 30%;
+}
