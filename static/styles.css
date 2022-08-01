@@ -17,6 +17,20 @@ a {
 a:hover {
     color: #e1e1e1;
 }
+
+/* Navbar styling */
+.topbar {
+    /*margin: auto 30% auto 30%;*/
+    margin: 0 auto;
+}
+.list-non-style {
+    list-style-type: none;
+}
+.list-non-style > li {
+    display: inline;
+}
+
+/* Text sections */
 .title-2{
     margin: 0;
 }
