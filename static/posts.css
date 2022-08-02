@@ -1,0 +1,18 @@
+.post-section {
+    margin: 5% 28% 5% 28%;
+    font-size: larger;
+}
+
+pre {
+    white-space: pre-line;
+}
+
+.code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: smaller;
+    padding: 10px;
+    background-color: black;
+    color: #b2fba5;
+    font-weight: bold;
+    border-radius: 10px;
+}
