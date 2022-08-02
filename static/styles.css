@@ -31,8 +31,13 @@ a:hover {
 }
 
 /* Text sections */
-h1 {
+.top-title {
     font-family: 'Press Start 2P', 'JetBrains Mono', monospace;
+}
+.post-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 50px;
+    margin: auto 10% auto 10% ;
 }
 .title-2{
     margin: 0;
