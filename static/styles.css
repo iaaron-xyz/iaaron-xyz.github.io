@@ -139,6 +139,17 @@ li {
     font-size: 14px;
 }
 
+/* Skills Section */
+.content-skills {
+    width: 770px;
+}
+.skills-sublist-title {
+    margin-bottom: 0;
+}
+.skills-lists p {
+    margin: 0;
+}
+
 /* Footer section */
 footer {
     padding-top: 50px;
