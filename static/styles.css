@@ -149,7 +149,9 @@ li {
 .skills-lists p {
     margin: 0;
 }
-
+.in-process {
+    color: #202124;
+}
 /* Footer section */
 footer {
     padding-top: 50px;
