@@ -92,25 +92,51 @@ li {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.card-project {
+.project-card {
     margin-bottom: 20px;
+    background-color: #3b3d42;
+    border-radius: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
 }
 .project-image {
     background-color: teal;
     height: 200px;
     width: 200px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 .project-image img {
-    border-radius: 15px;
+    /* top corners rounded / bottom corners sharp */
+    border-radius: 15px 15px 0px 0px;
 }
 .project-description {
     width: 200px;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
+    /* does not change the size of the div when canging the padding */
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    flex: 1;
+    
 }
 .project-description span {
+    display: block;
     font-weight: 900;
+    font-size: larger;
+    margin-bottom: -5px;
+}
+.project-links {
+    padding: 5px 10px 10px 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    border-top: 1px solid whitesmoke;
+}
+.project-links ul li {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 /* Footer section */
