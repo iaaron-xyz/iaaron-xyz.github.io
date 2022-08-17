@@ -170,16 +170,24 @@ footer {
     .content-section {
         width: 312px;
     }
+    .row-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 250px;
+    }
     .project-image {
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: inherit;
     }
     .project-image img {
-        width: 150px;
+        width: 250px;
         height: auto;
     }
     .project-description {
-        width: 150px;
+        width: inherit;
         font-size:13px;
         margin: auto;
     }
