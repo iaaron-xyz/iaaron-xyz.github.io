@@ -85,6 +85,9 @@ li {
     display: flex;
     flex-direction: column;
 }
+.projects-section h3 {
+    margin-bottom: 0;
+}
 .row-projects {
     display: flex;
     justify-content: space-between;
@@ -171,11 +174,11 @@ footer {
         width: 300px;
     }
     .project-image, .project-image img {
-        height: 300px;
-        width: 300px;
+        width: inherit;
+        height: 169px;
     }
     .project-description {
-        width: 300px;
+        width: inherit;
         
     }
 }
@@ -202,14 +205,14 @@ footer {
         width: 312px;
     }
     .project-card {
-        width: 250px;
+        width: 300px;
     }
     .project-image {
-        height: 250px;
-        width: inherit;
+        width: 300px;
+        height: 169px;
     }
     .project-image img {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
     .project-description {
