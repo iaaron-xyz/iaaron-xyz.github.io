@@ -96,25 +96,24 @@ li {
     margin-bottom: 20px;
     background-color: #3b3d42;
     border-radius: 15px;
-    width: 220px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 20px rgb(22, 22, 22);
 }
 .project-image {
     background-color: teal;
-    height: 220px;
-    width: 220px;
+    width: 320px;
+    height: 180px;
     border-radius: 15px 15px 0px 0px;
 }
 .project-image img {
     /* top corners rounded / bottom corners sharp */
     border-radius: 15px 15px 0px 0px;
-    width: 220px;
-    height: auto;
+    width: 320px;
 }
 .project-description {
-    width: 220px;
+    width: inherit;
     text-align: center;
     padding: 10px;
     /* does not change the size of the div when canging the padding */
