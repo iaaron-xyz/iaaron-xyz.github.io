@@ -154,9 +154,25 @@ li {
 .skills-lists p {
     margin: 0;
 }
+.skills-icons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.skill-icon {
+    text-align: center;
+    margin-right: 15px;
+    font-size: 13px;
+}
+.skill-icon i {
+    color: #f1f1f1;
+    font-size: 50px;
+}
 .in-process {
     color: #202124;
 }
+
+
 /* Footer section */
 footer {
     padding-top: 50px;
