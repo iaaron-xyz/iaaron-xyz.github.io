@@ -1,7 +1,8 @@
 // Constants
-const MAIN_PROJECTS = 2;
+// Number of projects to show in Homepage
+const PROJECTS_MAIN = 2;
 
-// Variables
+// Projects information list
 const projectsList = [
     {
         name: "Recipes",
@@ -24,6 +25,20 @@ const projectsList = [
         repo: "https://github.com/iaaron-xyz/rock-paper-scissors",
         image: "./public/images/projects/project-rock-paper-scissors.jpg"
     },
+    {
+        name: "Etch a Sketch!",
+        description: "This is my implementation of a basic pixel drawing app. You can change the resolution og the grid and the colors to use.",
+        demo: "https://iaaron-xyz.github.io/etch-a-sketch/",
+        repo: "https://github.com/iaaron-xyz/etch-a-sketch",
+        image: "./public/images/projects/project-etch-a-sketch.jpg"
+    },
+    {
+        name: "Calculator",
+        description: "This webpage displays a functional calculator. This calculator is able to make simple calculations, handy for quick computations.",
+        demo: "https://iaaron-xyz.github.io/calculator/",
+        repo: "https://github.com/iaaron-xyz/calculator",
+        image: "./public/images/projects/project-calculator.jpg"
+    },
 ]
 
 // DOM Elements
@@ -33,27 +48,28 @@ const projectsHome = document.getElementById("projects-home");
 function displayMainProjects() {
     projectsNumber = projectsList.length;
     projectsHome.innerHTML = '';
-    for (let i = projectsNumber-1; i >= projectsNumber-MAIN_PROJECTS; i--) {
-        console.log(i);
-        projectsHome.innerHTML += `<div class="project-card"> \
-                                      <div class="project-image"> \
-                                          <a href=${projectsList[i].demo} target="_blank"> \
-                                              <img src=${projectsList[i].image} alt="project thumbnail"> \
-                                          </a> \
-                                      </div> \
-                                      <div class="project-description"> \
-                                          <span>${projectsList[i].name}</span><br> \
-                                          ${projectsList[i].description} \
-                                      </div> \
-                                      <div class="project-links"> \
-                                          <ul> \
-                                              <li><a href="${projectsList[i].demo}" target="_blank">Live Demo</a></li> \
-                                              <li><a href="${projectsList[i].repo}" target="_blank">Repository</a></li> \
-                                          </ul> \
-                                      </div> \
-                                  </div>`;
+    // Append the last 2 elements projects added
+    for (let i = projectsNumber-1; i >= projectsNumber-PROJECTS_MAIN; i--) {
+        projectsHome.innerHTML +=   `<div class="project-card"> \
+                                        <div class="project-image"> \
+                                            <a href=${projectsList[i].demo} target="_blank"> \
+                                                <img src=${projectsList[i].image} alt="project thumbnail"> \
+                                            </a> \
+                                        </div> \
+                                        <div class="project-description"> \
+                                            <span>${projectsList[i].name}</span><br> \
+                                            ${projectsList[i].description} \
+                                        </div> \
+                                        <div class="project-links"> \
+                                            <ul> \
+                                                <li><a href="${projectsList[i].demo}" target="_blank">Live Demo</a></li> \
+                                                <li><a href="${projectsList[i].repo}" target="_blank">Repository</a></li> \
+                                            </ul> \
+                                        </div> \
+                                    </div>`;
     }
 }
 
-// DOM Manipualtion
+
+// Show the latest N projects in homepage
 displayMainProjects();
