@@ -1,7 +1,6 @@
 // Constants
 // Number of projects to show in Homepage
 const PROJECTS_MAIN = 2;
-
 // Projects information list
 const projectsList = [
     {
@@ -44,11 +43,15 @@ const projectsList = [
 // DOM Elements
 const projectsSection = document.querySelector(".row-projects");
 
-// Function
-function displayMainProjects() {
+// Show the latest N projects in homepage
+displayProjects();
+
+
+// Display the projects from newest to oldest
+function displayProjects() {
+    projectsNumber = projectsList.length;
+    projectsSection.innerHTML = '';
     if (projectsSection.id == "projects-home") {
-        projectsNumber = projectsList.length;
-        projectsSection.innerHTML = '';
         // Append the last 2 elements projects added
         for (let i = projectsNumber-1; i >= projectsNumber-PROJECTS_MAIN; i--) {
             projectsSection.innerHTML +=   `<div class="project-card"> \
@@ -70,22 +73,7 @@ function displayMainProjects() {
                                         </div>`;
         }
     }
-    return;
-}
-
-
-
-// Show the latest N projects in homepage
-displayMainProjects();
-// Show all the projects in projects page
-displayAllProjects();
-
-
-// Display the full list of projects
-function displayAllProjects() {
-    if (projectsSection.id == "projects-all") {        
-        projectsNumber = projectsList.length;
-        projectsSection.innerHTML = '';
+    else if (projectsSection.id == "projects-all") {        
         // Append all the projects from newest to oldest
         for (let i = projectsNumber-1; i >= 0; i--) {
             projectsSection.innerHTML +=   `<div class="project-card"> \
