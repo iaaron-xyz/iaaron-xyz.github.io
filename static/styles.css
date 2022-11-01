@@ -1,5 +1,5 @@
 body {
-    background-color: #202124;
+    background-color: #0d1117;
     color: #f1f1f1;
     font-family: 'JetBrains Mono', monospace;
     height: 100vh;
@@ -101,12 +101,13 @@ li {
 }
 .project-card {
     margin-bottom: 20px;
-    background-color: #3b3d42;
+    background-color: #1a1b27;
     border-radius: 15px;
+    border: 1px solid #21253f;
     width: 320px;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 10px 20px rgb(22, 22, 22);
+    box-shadow: 10px 10px 20px #07090c;
 }
 .project-image {
     width: 320px;
@@ -119,6 +120,7 @@ li {
     width: 320px;
 }
 .project-description {
+    color: #adbdd8;
     width: inherit;
     text-align: center;
     padding: 10px;
@@ -130,6 +132,7 @@ li {
     
 }
 .project-description span {
+    color: #f1f1f1;
     display: block;
     font-weight: 900;
     font-size: larger;
