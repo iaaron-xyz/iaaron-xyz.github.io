@@ -42,34 +42,70 @@ const projectsList = [
 ]
 
 // DOM Elements
-const projectsHome = document.getElementById("projects-home");
+const projectsSection = document.querySelector(".row-projects");
 
 // Function
 function displayMainProjects() {
-    projectsNumber = projectsList.length;
-    projectsHome.innerHTML = '';
-    // Append the last 2 elements projects added
-    for (let i = projectsNumber-1; i >= projectsNumber-PROJECTS_MAIN; i--) {
-        projectsHome.innerHTML +=   `<div class="project-card"> \
-                                        <div class="project-image"> \
-                                            <a href=${projectsList[i].demo} target="_blank"> \
-                                                <img src=${projectsList[i].image} alt="project thumbnail"> \
-                                            </a> \
-                                        </div> \
-                                        <div class="project-description"> \
-                                            <span>${projectsList[i].name}</span><br> \
-                                            ${projectsList[i].description} \
-                                        </div> \
-                                        <div class="project-links"> \
-                                            <ul> \
-                                                <li><a href="${projectsList[i].demo}" target="_blank">Live Demo</a></li> \
-                                                <li><a href="${projectsList[i].repo}" target="_blank">Repository</a></li> \
-                                            </ul> \
-                                        </div> \
-                                    </div>`;
+    if (projectsSection.id == "projects-home") {
+        projectsNumber = projectsList.length;
+        projectsSection.innerHTML = '';
+        // Append the last 2 elements projects added
+        for (let i = projectsNumber-1; i >= projectsNumber-PROJECTS_MAIN; i--) {
+            projectsSection.innerHTML +=   `<div class="project-card"> \
+                                            <div class="project-image"> \
+                                                <a href=${projectsList[i].demo} target="_blank"> \
+                                                    <img src=${projectsList[i].image} alt="project thumbnail"> \
+                                                </a> \
+                                            </div> \
+                                            <div class="project-description"> \
+                                                <span>${projectsList[i].name}</span><br> \
+                                                ${projectsList[i].description} \
+                                            </div> \
+                                            <div class="project-links"> \
+                                                <ul> \
+                                                    <li><a href="${projectsList[i].demo}" target="_blank">Live Demo</a></li> \
+                                                    <li><a href="${projectsList[i].repo}" target="_blank">Repository</a></li> \
+                                                </ul> \
+                                            </div> \
+                                        </div>`;
+        }
     }
+    return;
 }
+
 
 
 // Show the latest N projects in homepage
 displayMainProjects();
+// Show all the projects in projects page
+displayAllProjects();
+
+
+// Display the full list of projects
+function displayAllProjects() {
+    if (projectsSection.id == "projects-all") {        
+        projectsNumber = projectsList.length;
+        projectsSection.innerHTML = '';
+        // Append all the projects from newest to oldest
+        for (let i = projectsNumber-1; i >= 0; i--) {
+            projectsSection.innerHTML +=   `<div class="project-card"> \
+                                            <div class="project-image"> \
+                                                <a href=${projectsList[i].demo} target="_blank"> \
+                                                    <img src=${projectsList[i].image} alt="project thumbnail"> \
+                                                </a> \
+                                            </div> \
+                                            <div class="project-description"> \
+                                                <span>${projectsList[i].name}</span><br> \
+                                                ${projectsList[i].description} \
+                                            </div> \
+                                            <div class="project-links"> \
+                                                <ul> \
+                                                    <li><a href="${projectsList[i].demo}" target="_blank">Live Demo</a></li> \
+                                                    <li><a href="${projectsList[i].repo}" target="_blank">Repository</a></li> \
+                                                </ul> \
+                                            </div> \
+                                        </div>`;
+        }
+    }
+    return;
+}
