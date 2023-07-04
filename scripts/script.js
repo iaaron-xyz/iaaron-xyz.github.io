@@ -51,6 +51,8 @@ displayProjects();
 function displayProjects() {
     projectsNumber = projectsList.length;
     projectsSection.innerHTML = '';
+
+    // HOMEPAGE - DISPLAY LATEST PROJECTS
     if (projectsSection.id == "projects-home") {
         // Append the last 2 elements projects added
         for (let i = projectsNumber-1; i >= projectsNumber-PROJECTS_MAIN; i--) {
@@ -73,7 +75,9 @@ function displayProjects() {
                                         </div>`;
         }
     }
-    else if (projectsSection.id == "projects-all") {        
+
+    // PROJECTS PAGE - ALL THE FRONTEND PROJECTS
+    else if (projectsSection.id == "frontend-projects-all") {        
         // Append all the projects from newest to oldest
         for (let i = projectsNumber-1; i >= 0; i--) {
             projectsSection.innerHTML +=   `<div class="project-card"> \
