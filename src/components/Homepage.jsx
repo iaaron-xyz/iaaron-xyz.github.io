@@ -19,8 +19,10 @@ const HomeHeader = () => {
     <>
       <div className='my-8 w-24 h-24 bg-teal-600 rounded-full'></div>
       <h1 className='mb-2 text-3xl'>Name Lastname</h1>
-      <h2 className='text-xl mb-4'>Subititle header</h2>
-      <p>Available for new opportunities</p>
+      <h2 className='text-xl mb-4x dark:text-slate-400'>Subtitle header</h2>
+      <p className='mt-2 dark:text-green-400'>
+        &#9679; Available for new opportunities
+      </p>
     </>
   );
 };
@@ -44,11 +46,11 @@ const SocialLinks = () => {
 const ContactMail = () => {
   return (
     <div>
-      <button className='mx-4 my-2 px-6 py-1 bg-slate-100 rounded-md'>
+      <button className='mx-4 my-2 px-6 py-1 bg-slate-100 rounded-md dark:text-slate-700'>
         Contact Me
       </button>
       or
-      <button className='mx-4 my-2 px-6 py-1 bg-slate-800 text-slate-200 rounded-md'>
+      <button className='mx-4 my-2 px-6 py-1 bg-slate-800 text-slate-200 rounded-md dark:bg-slate-950'>
         Copy email address
       </button>
     </div>
