@@ -1,10 +1,11 @@
+import Homepage from "./components/Homepage";
 import "./App.css";
 
 function App() {
   return (
-    <>
-      <div>My portfolio</div>
-    </>
+    <main className='flex flex-col items-center'>
+      <Homepage />
+    </main>
   );
 }
 
