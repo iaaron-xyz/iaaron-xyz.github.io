@@ -1,4 +1,5 @@
 import Sections from "./Sections";
+import CardsGroup from "./ProjectCards";
 
 const Homepage = () => {
   return (
@@ -73,7 +74,13 @@ const HomeAbout = () => {
 };
 
 const HomeWorks = () => {
-  return <Sections title='Projects' content='Works here.' />;
+  return (
+    <Sections
+      title='Projects'
+      // content={<CardsGroup title='Project 1' image='image cover' />}
+      content={<CardsGroup quantity={3} />}
+    />
+  );
 };
 
 export default Homepage;
