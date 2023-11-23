@@ -1,5 +1,6 @@
 import Sections from "./Sections";
 import CardsGroup from "./ProjectCards";
+import Footer from "./Footer";
 
 const Homepage = () => {
   return (
@@ -8,6 +9,7 @@ const Homepage = () => {
       <SocialLinks />
       <ContactMail />
       <ContentContainer />
+      <Footer />
     </div>
   );
 };
