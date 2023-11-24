@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const Homepage = () => {
   return (
-    <div className='w-5/12 flex flex-col items-center'>
+    <div className='w-4/12 flex flex-col items-center'>
       <HomeHeader />
       <SocialLinks />
       <ContactMail />
