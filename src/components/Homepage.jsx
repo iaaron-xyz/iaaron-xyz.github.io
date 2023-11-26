@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import ArtstationLogo from "./icons/ArtstationLogo";
 import GithubLogo from "./icons/GithubLogo";
 import LinkedinLogo from "./icons/LinkedinLogo";
+import AtIcon from "./icons/AtIcon";
+import CopyPasteIcon from "./icons/CopyPasteIcon";
 
 const Homepage = () => {
   return (
@@ -50,13 +52,15 @@ const SocialLinks = () => {
 
 const ContactMail = () => {
   return (
-    <div>
-      <button className='mx-4 my-2 px-6 py-1 bg-slate-100 rounded-md dark:text-slate-700'>
+    <div className='flex items-center'>
+      <button className='flex items-center mx-4 my-2 px-8 py-2 bg-slate-100 rounded-md dark:text-slate-700 dark:hover:bg-slate-200'>
         Contact Me
+        <AtIcon className={"h-5 fill-slate-400 stroke-2 ml-4"} />
       </button>
       or
-      <button className='mx-4 my-2 px-6 py-1 bg-slate-800 text-slate-200 rounded-md dark:bg-slate-950'>
+      <button className='flex items-center mx-4 my-2 px-8 py-2 bg-slate-800 text-slate-200 rounded-md dark:bg-slate-950 dark:hover:bg-slate-900'>
         Copy email address
+        <CopyPasteIcon className={"h-5 fill-slate-500 stroke-2 ml-4"} />
       </button>
     </div>
   );
