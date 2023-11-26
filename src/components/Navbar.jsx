@@ -1,13 +1,47 @@
+import HomeLogo from "./icons/HomeIcon";
+import AboutIcon from "./icons/AboutIcon";
+import FolderIcon from "./icons/FolderIcon";
+import StackIcon from "./icons/StackIcon";
+import EmailIcon from "./icons/EmailIcon";
+
 const Navbar = () => {
   return (
     <div className='fixed h-full border-r border-slate-700 left-0'>
       <div className='flex h-full'>
         <ul className='[&>li]:my-4 [&>li]:px-4 flex flex-col items-center justify-center'>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Stack</li>
-          <li>Contact</li>
+          <li>
+            <HomeLogo
+              className={
+                "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
+              }
+            />
+          </li>
+          <li>
+            <AboutIcon
+              className={
+                "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
+              }
+            />
+          </li>
+          <li>
+            <FolderIcon
+              className={
+                "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
+              }
+            />
+          </li>
+          <li>
+            <StackIcon
+              className={"h-6 fill-slate-400 stroke-2 hover:fill-slate-200"}
+            />
+          </li>
+          <li>
+            <EmailIcon
+              className={
+                "h-6 stroke-slate-400 stroke-2 dark:hover:stroke-slate-200"
+              }
+            />
+          </li>
         </ul>
       </div>
     </div>
