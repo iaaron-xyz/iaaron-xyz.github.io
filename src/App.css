@@ -1,0 +1,9 @@
+:root {
+    --second-text-color: #94a3b8;
+    --svg-fill: none;
+}
+
+.logo {
+    max-height: 25px;
+    stroke: var(--second-text-color);
+}

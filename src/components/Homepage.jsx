@@ -1,6 +1,9 @@
 import Sections from "./Sections";
 import CardsGroup from "./ProjectCards";
 import Footer from "./Footer";
+import ArtstationLogo from "./icons/ArtstationLogo";
+import GithubLogo from "./icons/GithubLogo";
+import LinkedinLogo from "./icons/LinkedinLogo";
 
 const Homepage = () => {
   return (
@@ -29,15 +32,17 @@ const HomeHeader = () => {
 
 const SocialLinks = () => {
   return (
-    <div className='my-6'>
-      <a href='' className='m-4'>
-        Linkedin
+    <div className='[&>a]:mx-4 my-6 flex'>
+      <a href=''>
+        <LinkedinLogo className={"logo hover:stroke-white"} />
       </a>
-      <a href='' className='m-4'>
-        Github
+      <a href=''>
+        <GithubLogo
+          className={"logo stroke-none fill-slate-400 hover:fill-white"}
+        />
       </a>
-      <a href='' className='m-4'>
-        Artstation
+      <a href=''>
+        <ArtstationLogo className={"logo hover:stroke-white"} />
       </a>
     </div>
   );
