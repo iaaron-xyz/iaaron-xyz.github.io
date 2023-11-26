@@ -25,8 +25,9 @@ const HomeHeader = () => {
       <div className='my-8 w-24 h-24 bg-teal-600 rounded-full'></div>
       <h1 className='mb-2 text-3xl'>Name Lastname</h1>
       <h2 className='text-xl mb-4x dark:text-slate-400'>Subtitle header</h2>
-      <p className='mt-2 dark:text-green-400'>
-        &#9679; Available for new opportunities
+      <p className='mt-2 dark:text-emerald-500'>
+        <span className='mx-2 dark:text-green-300'>&#9679;</span> Available for
+        new opportunities
       </p>
     </>
   );
@@ -34,17 +35,20 @@ const HomeHeader = () => {
 
 const SocialLinks = () => {
   return (
-    <div className='[&>a]:mx-4 my-6 flex'>
-      <a href=''>
+    <div className='[&>a]:mx-4 mt-8 mb-6 flex text-slate-400'>
+      <a href='' className='flex flex-col'>
         <LinkedinLogo className={"logo hover:stroke-white"} />
+        <span>LinkedIn</span>
       </a>
-      <a href=''>
+      <a href='' className='flex flex-col'>
         <GithubLogo
           className={"logo stroke-none fill-slate-400 hover:fill-white"}
         />
+        <span>Github</span>
       </a>
-      <a href=''>
-        <ArtstationLogo className={"logo hover:stroke-white"} />
+      <a href='' className='flex flex-col'>
+        <ArtstationLogo className={"logo dark:hover:stroke-slate-300"} />
+        <span>Artstation</span>
       </a>
     </div>
   );
@@ -52,13 +56,13 @@ const SocialLinks = () => {
 
 const ContactMail = () => {
   return (
-    <div className='flex items-center'>
+    <div className='flex items-center my-4'>
       <button className='flex items-center mx-4 my-2 px-8 py-2 bg-slate-100 rounded-md dark:text-slate-700 dark:hover:bg-slate-200'>
         Contact Me
         <AtIcon className={"h-5 fill-slate-400 stroke-2 ml-4"} />
       </button>
       or
-      <button className='flex items-center mx-4 my-2 px-8 py-2 bg-slate-800 text-slate-200 rounded-md dark:bg-slate-950 dark:hover:bg-slate-900'>
+      <button className='flex items-center mx-4 my-2 px-8 py-2 bg-slate-800 text-slate-200 rounded-md dark:bg-slate-800 dark:hover:bg-slate-700'>
         Copy email address
         <CopyPasteIcon className={"h-5 fill-slate-500 stroke-2 ml-4"} />
       </button>

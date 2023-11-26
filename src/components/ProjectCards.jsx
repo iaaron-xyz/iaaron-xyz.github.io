@@ -40,9 +40,11 @@ const CardsGroup = ({ quantity }) => {
 
 const ProjectCards = ({ title, image }) => {
   return (
-    <div className='bg-pink-300 rounded-lg p-2 mb-4'>
+    <div className='bg-pink-300 rounded-lg p-2 mb-4 dark:bg-slate-800'>
       <h3 className='m-1 mb-2'>{title}</h3>
-      <div className='w-full h-72 rounded-lg bg-sky-200'>{image}</div>
+      <div className='w-full h-72 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
+        {image}
+      </div>
     </div>
   );
 };

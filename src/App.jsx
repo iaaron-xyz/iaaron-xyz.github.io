@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <main className='flex flex-col items-center dark:bg-slate-800 dark:text-slate-100'>
+    <main className='flex flex-col items-center dark:bg-slate-900 dark:text-slate-200'>
       <Navbar />
       <Homepage />
     </main>
