@@ -1,6 +1,5 @@
 import Sections from "./Sections";
 import CardsGroup from "./ProjectCards";
-import Footer from "./Footer";
 import ArtstationLogo from "./icons/ArtstationLogo";
 import GithubLogo from "./icons/GithubLogo";
 import LinkedinLogo from "./icons/LinkedinLogo";
@@ -14,7 +13,6 @@ const Homepage = () => {
       <SocialLinks />
       <ContactMail />
       <ContentContainer />
-      <Footer />
     </div>
   );
 };
@@ -91,13 +89,7 @@ const HomeAbout = () => {
 };
 
 const HomeWorks = () => {
-  return (
-    <Sections
-      title='Projects'
-      // content={<CardsGroup title='Project 1' image='image cover' />}
-      content={<CardsGroup quantity={3} />}
-    />
-  );
+  return <Sections title='Projects' content={<CardsGroup quantity={3} />} />;
 };
 
 export default Homepage;

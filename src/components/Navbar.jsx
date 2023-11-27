@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomeLogo from "./icons/HomeIcon";
 import AboutIcon from "./icons/AboutIcon";
 import FolderIcon from "./icons/FolderIcon";
@@ -10,18 +11,22 @@ const Navbar = () => {
       <div className='flex h-full'>
         <ul className='[&>li]:my-4 [&>li]:px-4 flex flex-col items-center justify-center'>
           <li>
-            <HomeLogo
-              className={
-                "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
-              }
-            />
+            <Link to='/'>
+              <HomeLogo
+                className={
+                  "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
+                }
+              />
+            </Link>
           </li>
           <li>
-            <AboutIcon
-              className={
-                "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
-              }
-            />
+            <Link to='about'>
+              <AboutIcon
+                className={
+                  "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
+                }
+              />
+            </Link>
           </li>
           <li>
             <FolderIcon
