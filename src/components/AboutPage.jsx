@@ -2,7 +2,7 @@ import Sections from "./Sections";
 
 const AboutPage = () => {
   return (
-    <div className='my-16 flex flex-col w-4/12'>
+    <div className='content-width my-16 flex flex-col'>
       <h1 className='text-3xl'>About</h1>
       <h2 className='text-2xl mb-8 dark:text-slate-500'>
         I love to work at the intersection of science, art and programming. Get

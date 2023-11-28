@@ -8,7 +8,7 @@ import CopyPasteIcon from "./icons/CopyPasteIcon";
 
 const Homepage = () => {
   return (
-    <div className='w-4/12 flex flex-col items-center'>
+    <div className='content-width flex flex-col items-center'>
       <HomeHeader />
       <SocialLinks />
       <ContactMail />
