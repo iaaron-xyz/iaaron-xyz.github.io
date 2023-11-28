@@ -6,4 +6,11 @@
     * {
         box-sizing: border-box;
     }
+
+    /* html,
+    body,
+    #root,
+    main {
+        min-height: 100vh;
+    } */
 }
