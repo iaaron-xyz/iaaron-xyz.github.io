@@ -23,7 +23,7 @@ const AboutPhoto = () => {
 const AboutMeIntro = () => {
   return (
     <>
-      <Sections title={"about"} content={<AboutMeIntroContent />} />
+      <Sections title={"About"} content={<AboutMeIntroContent />} />
     </>
   );
 };
