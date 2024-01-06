@@ -36,17 +36,14 @@ const SocialLinks = () => {
     <div className='[&>a]:mx-4 mt-8 mb-6 flex text-slate-400'>
       <a href='' className='flex flex-col'>
         <LinkedinLogo className={"logo hover:stroke-white"} />
-        <span>LinkedIn</span>
       </a>
-      <a href='' className='flex flex-col'>
+      <a href='' className='flex flex-col hover:text-white hover:fill-white'>
         <GithubLogo
           className={"logo stroke-none fill-slate-400 hover:fill-white"}
         />
-        <span>Github</span>
       </a>
       <a href='' className='flex flex-col'>
         <ArtstationLogo className={"logo dark:hover:stroke-slate-300"} />
-        <span>Artstation</span>
       </a>
     </div>
   );
