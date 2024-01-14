@@ -1,5 +1,5 @@
-import Sections from "./Sections";
-import CardsGroup from "./ProjectCards";
+import Sections from "./layout/Sections";
+import CardsGroup from "./layout/ProjectCards";
 import ArtstationIcon from "./icons/ArtstationIcon";
 import GithubIcon from "./icons/GithubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";

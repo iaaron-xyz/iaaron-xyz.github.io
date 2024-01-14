@@ -1,4 +1,4 @@
-import Sections from "./Sections";
+import Sections from "./layout/Sections";
 
 const AboutPage = () => {
   return (

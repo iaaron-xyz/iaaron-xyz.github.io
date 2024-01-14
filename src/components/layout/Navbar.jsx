@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import HomeLogo from "./icons/HomeIcon";
-import AboutIcon from "./icons/AboutIcon";
-import FolderIcon from "./icons/FolderIcon";
-import StackIcon from "./icons/StackIcon";
-import EmailIcon from "./icons/EmailIcon";
+import HomeLogo from "../icons/HomeIcon";
+import AboutIcon from "../icons/AboutIcon";
+import FolderIcon from "../icons/FolderIcon";
+import StackIcon from "../icons/StackIcon";
+import EmailIcon from "../icons/EmailIcon";
 
 const Navbar = () => {
   return (
