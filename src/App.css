@@ -1,11 +1,16 @@
 :root {
-    --second-text-color: #94a3b8;
+    --second-text-color: #778394;
     --svg-fill: none;
 }
 
-.logo {
-    max-height: 25px;
+.logo-stroke {
     stroke: var(--second-text-color);
+}
+.logo-fill {
+    fill: var(--second-text-color);
+}
+.home-logo {
+    max-height: 30px;
 }
 
 .content-width {

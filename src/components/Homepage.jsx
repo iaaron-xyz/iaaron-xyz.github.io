@@ -1,8 +1,9 @@
 import Sections from "./Sections";
 import CardsGroup from "./ProjectCards";
-import ArtstationLogo from "./icons/ArtstationLogo";
-import GithubLogo from "./icons/GithubLogo";
-import LinkedinLogo from "./icons/LinkedinLogo";
+import ArtstationIcon from "./icons/ArtstationIcon";
+import GithubIcon from "./icons/GithubIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+import BehanceIcon from "./icons/BehanceIcon";
 import AtIcon from "./icons/AtIcon";
 import CopyPasteIcon from "./icons/CopyPasteIcon";
 
@@ -33,17 +34,29 @@ const HomeHeader = () => {
 
 const SocialLinks = () => {
   return (
-    <div className='[&>a]:mx-4 mt-8 mb-6 flex text-slate-400'>
+    <div className='[&>a]:mx-1 mt-8 mb-6 flex text-slate-400'>
       <a href='' className='flex flex-col'>
-        <LinkedinLogo className={"logo hover:stroke-white"} />
+        <LinkedinIcon className={"logo-stroke home-logo hover:stroke-white"} />
       </a>
-      <a href='' className='flex flex-col hover:text-white hover:fill-white'>
-        <GithubLogo
-          className={"logo stroke-none fill-slate-400 hover:fill-white"}
+      <a
+        href=''
+        className='flex flex-col hover:text-white hover:fill-slate-300'
+      >
+        <GithubIcon
+          className={
+            "logo-stroke home-logo fill-slate-400 hover:stroke-slate-300"
+          }
         />
       </a>
       <a href='' className='flex flex-col'>
-        <ArtstationLogo className={"logo dark:hover:stroke-slate-300"} />
+        <ArtstationIcon
+          className={"logo-stroke home-logo dark:hover:stroke-slate-300"}
+        />
+      </a>
+      <a href='' className='flex flex-col'>
+        <BehanceIcon
+          className={"logo-fill home-logo dark:hover:fill-slate-300"}
+        />
       </a>
     </div>
   );
