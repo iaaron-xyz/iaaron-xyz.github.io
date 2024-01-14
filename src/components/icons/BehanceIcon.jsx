@@ -1,4 +1,4 @@
-const GithubIcon = ({ className, h = 48, w = 48 }) => {
+const BehanceIcon = ({ className, h = 48, w = 48 }) => {
   const pathStyle = {
     // fill: "#778394",
     strokeWidth: 1.2,
@@ -22,4 +22,4 @@ const GithubIcon = ({ className, h = 48, w = 48 }) => {
   );
 };
 
-export default GithubIcon;
+export default BehanceIcon;

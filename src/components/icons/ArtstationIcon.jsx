@@ -1,4 +1,4 @@
-const GithubIcon = ({ className, h = 48, w = 48 }) => {
+const ArtstationIcon = ({ className, h = 48, w = 48 }) => {
   const pathStyle = {
     fill: "none",
     strokeWidth: 1.5,
@@ -22,4 +22,4 @@ const GithubIcon = ({ className, h = 48, w = 48 }) => {
   );
 };
 
-export default GithubIcon;
+export default ArtstationIcon;
