@@ -29,11 +29,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <FolderIcon
-              className={
-                "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
-              }
-            />
+            <Link to='works'>
+              <FolderIcon
+                className={
+                  "h-6 fill-slate-400 stroke-2 dark:hover:fill-slate-200"
+                }
+              />
+            </Link>
           </li>
           <li>
             <StackIcon
