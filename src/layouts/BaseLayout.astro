@@ -5,11 +5,7 @@ const { pageTitle, subTitle } = Astro.props;
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/kb16.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Homepage | iaaron</title>
+    <!-- Prevent Flash of Unstyled Content (FOUC)  -->
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -21,27 +17,31 @@ const { pageTitle, subTitle } = Astro.props;
         document.documentElement.classList.remove("dark");
       }
     </script>
+
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/kb16.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Homepage | iaaron</title>
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
       <div>
         <a href="/">home</a>
         <a href="/about">about</a>
       </div>
-      <div>
-        <button id="theme-toggle"> darkmode </button>
+      <div class="ml-auto">
+        <button id="theme-toggle"> M </button>
       </div>
     </nav>
+
+    <!-- Titles -->
     <h1>{pageTitle}</h1>
     <p class="text-xl">{subTitle}</p>
+
+    <!-- Content -->
     <slot />
-    <noscript
-      ><style>
-        body {
-          visibility: visible;
-        }
-      </style></noscript
-    >
   </body>
 
   <!-- scripts -->
