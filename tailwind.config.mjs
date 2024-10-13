@@ -7,6 +7,9 @@ export default {
 			fontFamily: {
 				'sentient-regular': ['Sentient-Regular', 'serif'],
 				'sentient-light': ['Sentient-Light' , 'serif'],
+				'inter-light': ['Inter-Light', 'sans'],
+				'inter-regular': ['Inter-Regular', 'sans'],
+				'inter-black': ['Inter-Black', 'sans']
 			}
 		},
 	},

@@ -1,4 +1,5 @@
 @import url("./sentients.css");
+@import url("./inter.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,10 +9,10 @@
     box-sizing: border-box;
 }
 body {
-    @apply my-10 mx-auto max-w-4xl leading-normal bg-slate-100 px-3 dark:bg-slate-800 dark:text-slate-100;
+    @apply my-10 mx-auto max-w-4xl leading-normal font-inter-regular bg-slate-100 px-3 dark:bg-slate-800 dark:text-slate-100;
 }
 h1, h2,h3,h4,h5,h6 {
-    @apply font-sentient-regular;
+    @apply font-sentient-light;
 }
 h1 {
   @apply text-8xl leading-relaxed text-center;
