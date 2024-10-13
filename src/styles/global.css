@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global styles */
+html {
+    @apply h-full m-0;
+}
+
+body {
+    @apply my-10 mx-auto max-w-4xl leading-normal bg-stone-200 px-3;
+}
+h1 {
+  @apply text-8xl leading-relaxed text-center;
+}
+h2 {
+    @apply text-4xl leading-normal;
+}
+/* component classes */
+.navbar {
+    @apply text-center my-8;
+}
+.navbar a {
+    @apply px-6 mx-0 font-bold text-slate-500;
+}
+
+.navbar a:hover {
+    @apply text-black;
+}

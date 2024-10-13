@@ -1,0 +1,23 @@
+---
+import "../styles/global.css";
+const { pageTitle, subTitle } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/kb16.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Homepage | iaaron</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">home</a>
+      <a href="/about">about</a>
+    </nav>
+    <h1>{pageTitle}</h1>
+    <p class="text-xl">{subTitle}</p>
+    <slot />
+  </body>
+</html>

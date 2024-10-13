@@ -1,16 +1,8 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Home";
+const subTitle =
+  "Hi! I am physics graduate with strong foundations in data analysis and computational methods. My other professional interests are web development and 3D art and modeling in which I am developing projects often.";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/kb16.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1 class="text-8xl">Astro</h1>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle} subTitle={subTitle} />
