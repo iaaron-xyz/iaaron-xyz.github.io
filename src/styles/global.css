@@ -4,8 +4,11 @@
 @tailwind utilities;
 
 /* global styles */
+* {
+    box-sizing: border-box;
+}
 body {
-    @apply my-10 mx-auto max-w-4xl leading-normal bg-stone-200 px-3;
+    @apply my-10 mx-auto max-w-4xl leading-normal bg-slate-100 px-3 dark:bg-slate-800 dark:text-slate-100;
 }
 h1, h2,h3,h4,h5,h6 {
     @apply font-sentient-regular;
@@ -18,7 +21,7 @@ h2 {
 }
 /* component classes */
 .navbar {
-    @apply text-center my-8;
+    @apply flex justify-center my-8;
 }
 .navbar a {
     @apply px-6 mx-0 font-bold text-slate-500;
