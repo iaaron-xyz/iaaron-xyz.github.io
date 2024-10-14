@@ -1,27 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "About";
+import MyStack from "../components/MyStack.astro";
+
+const pageTitle = "ABOUT";
 const subTitle =
   "Hi! I am a physicist with a strong foundation in mathematics, computational thinking and data analysis. In addition to that, I have other professional interests like frontend development and 3D modeling. Currently I am open to remote opportunities.";
 ---
 
 <BaseLayout pageTitle={pageTitle} subTitle={subTitle}>
-  <!-- Stack of skills -->
-  <div class="my-8">
-    <h2>My stack</h2>
-    <p>My set of skills and knowledge I feel comfortable with.</p>
-  </div>
-  <div>
-    <ul>
-      <li class="py-1">
-        <strong>Programming languages:</strong>
-        <br /> JavaScript &bull; Python &bull; Julia
-      </li>
-      <li class="py-1">
-        <strong>Tools:</strong><br /> VSCode &bull; Git &bull; Github.
-      </li>
-    </ul>
-  </div>
-
-  <!--  -->
+  <MyStack />
 </BaseLayout>
