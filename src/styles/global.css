@@ -41,3 +41,31 @@ button {
 .navbar a:hover {
     @apply text-black dark:text-white;
 }
+
+
+/* Special classes */
+.marker-yellow {
+        background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=yellow-300);
+        margin: -2px -6px;
+        padding:  2px  6px;
+}
+.marker-blue {
+    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=blue-200);
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+.marker-pink {
+    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=pink-200);
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+.marker-orange {
+    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=orange-300);
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+.marker-green {
+    background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=green-200);
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
