@@ -9,13 +9,13 @@
     box-sizing: border-box;
 }
 body {
-    @apply my-10 mx-auto px-3 max-w-4xl leading-normal font-inter-regular bg-slate-100 dark:bg-night dark:text-slate-100;
+    @apply my-10 mx-auto px-3 max-w-4xl leading-normal font-sentient-regular bg-slate-100 dark:bg-night dark:text-slate-100;
 }
 h2,h3,h4,h5,h6 {
-    @apply font-sentient-regular;
+    @apply font-inter-black;
 }
 h1 {
-  @apply text-8xl leading-relaxed text-center font-sentient-light;
+  @apply text-8xl leading-relaxed text-center font-inter-black;
 }
 h2 {
     @apply text-5xl leading-relaxed;
