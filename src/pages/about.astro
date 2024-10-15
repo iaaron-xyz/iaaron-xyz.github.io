@@ -1,18 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import MyStack from "../components/MyStack.astro";
+import Aboutpage from "../components/Aboutpage.astro";
 
 const pageTitle = "ABOUT";
 const subTitle =
   "Hi! I am a physicist with a strong foundation in mathematics, computational thinking and data analysis. In addition to that, I have other professional interests like frontend development and 3D modeling. Currently I am open to remote opportunities.";
 ---
 
-<BaseLayout pageTitle={pageTitle} subTitle={subTitle}>
-  <p class="my-8">
-    If you are interested in my artistic portfolio, you can click <a href=""
-      ><span class="marker-yellow">here!</span></a
-    > If you'd like to explore my porfolio centered in data science and sciencific
-    projects click <a href=""><span class="marker-orange">here!</span></a> :D
-  </p>
-  <MyStack />
+<BaseLayout pageTitle={pageTitle}>
+  <Aboutpage />
 </BaseLayout>
