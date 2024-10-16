@@ -15,9 +15,13 @@ const { frontmatter } = Astro.props;
       <p class="text-sm font-mono">
         Publication date: {frontmatter.pubDate.toString().slice(0, 10)}
       </p>
-      <p class="text-sm font-mono">
-        Updated: {frontmatter.upDate.toString().slice(0, 10)}
-      </p>
+      {
+        frontmatter.upDate && (
+          <p class="text-sm font-mono">
+            Updated: {frontmatter.upDate.toString().slice(0, 10)}
+          </p>
+        )
+      }
     </div>
     {
       frontmatter.image.url && (

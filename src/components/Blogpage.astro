@@ -6,7 +6,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
   <p>
     If I found something interesting or useful to sahre, I will share i here!
   </p>
-  <ul>
+  <ul class="mt-12 list-decimal font-inter-regular pl-12">
     {
       allPosts.map((post) => (
         <li>
