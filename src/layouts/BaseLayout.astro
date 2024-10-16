@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-const { pageTitle } = Astro.props;
+const { pageTitle, blogTitle } = Astro.props;
 ---
 
 <html lang="en">
@@ -37,8 +37,15 @@ const { pageTitle } = Astro.props;
       </div>
     </nav>
 
-    <!-- Titles -->
-    <h1>{pageTitle}</h1>
+    <!-- Titles: Renders bases if it's for a page title or blog title -->
+    {pageTitle && <h1>{pageTitle}</h1>}
+    {
+      blogTitle && (
+        <h1 class="leading-none text-left text-6xl mt-20 font-inter-regular">
+          {blogTitle}
+        </h1>
+      )
+    }
 
     <!-- Content -->
     <slot />

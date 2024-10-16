@@ -1,0 +1,42 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import "../styles/global.css";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout blogTitle={frontmatter.title}>
+  <h2
+    class="text-left text-slate-500 leading-none font-inter-light my-6 text-3xl"
+  >
+    {frontmatter.description}
+  </h2>
+  <section class="flex flex-col items-center">
+    <div class="my-16 self-start">
+      <p class="text-sm font-mono">
+        Publication date: {frontmatter.pubDate.toString().slice(0, 10)}
+      </p>
+      <p class="text-sm font-mono">
+        Updated: {frontmatter.upDate.toString().slice(0, 10)}
+      </p>
+    </div>
+    {
+      frontmatter.image.url && (
+        <img
+          src={frontmatter.image.url}
+          alt={frontmatter.image.alt}
+          class="w-full"
+        />
+      )
+    }
+  </section>
+
+  <section class="mt-16">
+    <slot />
+  </section>
+</BaseLayout>
+
+<style>
+  h3 {
+    @apply text-3xl leading-relaxed mt-5;
+  }
+</style>

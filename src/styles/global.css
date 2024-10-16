@@ -12,13 +12,16 @@ body {
     @apply my-10 mx-auto px-3 max-w-4xl leading-normal font-sentient-regular bg-slate-100 dark:bg-night dark:text-slate-100;
 }
 h2,h3,h4,h5,h6 {
-    @apply font-inter-black;
+    @apply font-inter-black my-4;
 }
 h1 {
   @apply text-8xl leading-relaxed text-center font-inter-black;
 }
 h2 {
-    @apply text-5xl leading-relaxed;
+    @apply text-4xl leading-normal;
+}
+h3 {
+    @apply text-3xl;
 }
 p {
     @apply text-xl text-slate-500 dark:text-slate-400;
