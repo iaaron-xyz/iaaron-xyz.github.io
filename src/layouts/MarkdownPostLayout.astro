@@ -25,11 +25,13 @@ const { frontmatter } = Astro.props;
     </div>
     {
       frontmatter.image.url && (
-        <img
-          src={frontmatter.image.url}
-          alt={frontmatter.image.alt}
-          class="w-full"
-        />
+        <div class="mr-auto">
+          <img
+            src={frontmatter.image.url}
+            alt={frontmatter.image.alt}
+            class="w-1/2"
+          />
+        </div>
       )
     }
   </section>
@@ -38,9 +40,3 @@ const { frontmatter } = Astro.props;
     <slot />
   </section>
 </BaseLayout>
-
-<style>
-  h3 {
-    @apply text-3xl leading-relaxed mt-5;
-  }
-</style>

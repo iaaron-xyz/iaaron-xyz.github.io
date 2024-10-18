@@ -42,7 +42,7 @@ const { pageTitle, blogTitle } = Astro.props;
       {pageTitle && <h1>{pageTitle}</h1>}
       {
         blogTitle && (
-          <h1 class="leading-none text-left text-6xl mt-20 font-inter-regular">
+          <h1 class="leading-none text-left text-6xl font-inter-regular">
             {blogTitle}
           </h1>
         )
@@ -67,14 +67,14 @@ const { pageTitle, blogTitle } = Astro.props;
       margin: 0;
     }
     body {
-      @apply leading-normal font-sentient-regular bg-slate-100 dark:bg-night dark:text-slate-100;
+      @apply leading-normal font-mono bg-slate-100 dark:bg-night dark:text-slate-100;
     }
     /* component classes */
     nav {
-      @apply h-screen flex flex-col p-10;
+      @apply h-screen flex flex-col p-10 font-mono;
     }
     nav a {
-      @apply px-6 mx-0 font-mono;
+      @apply px-6 mx-0;
     }
     nav a:hover {
       @apply text-black dark:text-white;
@@ -83,17 +83,17 @@ const { pageTitle, blogTitle } = Astro.props;
       @apply flex flex-col;
     }
     main {
-      @apply p-12 w-full h-screen overflow-y-auto;
+      @apply border-none p-10 w-full h-screen overflow-y-auto;
     }
     h2,
     h3,
     h4,
     h5,
     h6 {
-      @apply font-inter-black my-4;
+      @apply font-mono my-4;
     }
     h1 {
-      @apply text-8xl leading-relaxed text-center font-inter-black;
+      @apply mb-10 text-8xl font-sentient-light;
     }
     h2 {
       @apply text-4xl leading-normal;
@@ -105,7 +105,7 @@ const { pageTitle, blogTitle } = Astro.props;
       @apply text-xl text-slate-500 dark:text-slate-400;
     }
     a {
-      @apply font-inter-regular text-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white;
+      @apply font-mono text-xl text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white;
     }
     button {
       @apply bg-slate-300 px-3 py-1 rounded-md dark:bg-slate-600;
