@@ -24,31 +24,33 @@ const { pageTitle, blogTitle } = Astro.props;
     <title>Homepage | iaaron</title>
   </head>
 
-  <body>
+  <body class="grid grid-cols-12">
     <!-- Navigation Bar -->
-    <nav class="navbar">
+    <nav class="col-span-2">
       <div>
         <a href="/">home</a>
         <a href="/about">about</a>
         <a href="/blog">blog</a>
       </div>
-      <div class="ml-auto">
+      <div class="mt-auto mr-auto">
         <button id="theme-toggle"> M </button>
       </div>
     </nav>
 
-    <!-- Titles: Renders bases if it's for a page title or blog title -->
-    {pageTitle && <h1>{pageTitle}</h1>}
-    {
-      blogTitle && (
-        <h1 class="leading-none text-left text-6xl mt-20 font-inter-regular">
-          {blogTitle}
-        </h1>
-      )
-    }
+    <main class="col-span-10">
+      <!-- Titles: Renders bases if it's for a page title or blog title -->
+      {pageTitle && <h1>{pageTitle}</h1>}
+      {
+        blogTitle && (
+          <h1 class="leading-none text-left text-6xl mt-20 font-inter-regular">
+            {blogTitle}
+          </h1>
+        )
+      }
 
-    <!-- Content -->
-    <slot />
+      <!-- Content -->
+      <slot />
+    </main>
   </body>
 
   <!-- Styles -->
@@ -56,9 +58,32 @@ const { pageTitle, blogTitle } = Astro.props;
     /* global styles */
     * {
       box-sizing: border-box;
+      /* border: 1px solid red; */
+    }
+    html,
+    body {
+      height: 100vh;
+      width: 100%;
+      margin: 0;
     }
     body {
-      @apply my-10 mx-auto px-3 max-w-4xl leading-normal font-sentient-regular bg-slate-100 dark:bg-night dark:text-slate-100;
+      @apply leading-normal font-sentient-regular bg-slate-100 dark:bg-night dark:text-slate-100;
+    }
+    /* component classes */
+    nav {
+      @apply h-screen flex flex-col p-10;
+    }
+    nav a {
+      @apply px-6 mx-0 font-mono;
+    }
+    nav a:hover {
+      @apply text-black dark:text-white;
+    }
+    nav div {
+      @apply flex flex-col;
+    }
+    main {
+      @apply p-12 w-full h-screen overflow-y-auto;
     }
     h2,
     h3,

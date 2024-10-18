@@ -4,18 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* component classes */
-.navbar {
-    @apply flex justify-center my-8 relative;
-}
-.navbar a {
-    @apply px-6 mx-0 font-mono;
-}
-
-.navbar a:hover {
-    @apply text-black dark:text-white;
-}
-
 /* Special classes */
 .marker-yellow {
     @apply dark:text-slate-800;
