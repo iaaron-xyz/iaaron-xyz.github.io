@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 const { pageTitle, blogTitle } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <html lang="en">
@@ -28,9 +29,11 @@ const { pageTitle, blogTitle } = Astro.props;
     <!-- Navigation Bar -->
     <nav class="col-span-2">
       <div>
-        <a href="/">home</a>
-        <a href="/about">about</a>
-        <a href="/blog">blog</a>
+        <a href="/" class={currentPath === "/" && "font-bold"}>home</a>
+        <a href="/about" class={currentPath === "/about" && "font-bold"}
+          >about</a
+        >
+        <a href="/blog" class={currentPath === "/blog" && "font-bold"}>blog</a>
       </div>
       <div class="mt-auto mr-auto">
         <button id="theme-toggle"> M </button>
@@ -38,6 +41,9 @@ const { pageTitle, blogTitle } = Astro.props;
     </nav>
 
     <main class="col-span-10">
+      <!-- show current path -->
+      {currentPath !== "/" && <p class="mb-2">{currentPath}</p>}
+
       <!-- Titles: Renders bases if it's for a page title or blog title -->
       {pageTitle && <h1>{pageTitle}</h1>}
       {blogTitle && <h1 class="text-6xl">{blogTitle}</h1>}
