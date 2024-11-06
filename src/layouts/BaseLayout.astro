@@ -32,11 +32,21 @@ const currentPath =
     <!-- Navigation Bar -->
     <nav class="col-span-2">
       <div>
-        <a href="/" class={currentPath === "/" && "font-bold"}>home</a>
-        <a href="/about" class={currentPath === "/about" && "font-bold"}
-          >about</a
+        <a
+          href="/"
+          class={currentPath === "/" && "font-bold text-black dark:text-white"}
+          >home</a
         >
-        <a href="/blog" class={currentPath === "/blog" && "font-bold"}>blog</a>
+        <a
+          href="/about"
+          class={currentPath === "/about" &&
+            "font-bold text-black dark:text-white"}>about</a
+        >
+        <a
+          href="/blog"
+          class={currentPath === "/blog" &&
+            "font-bold text-black dark:text-white"}>blog</a
+        >
       </div>
       <div class="mt-auto mr-auto">
         <button id="theme-toggle"> M </button>
