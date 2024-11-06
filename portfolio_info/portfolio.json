@@ -1,0 +1,47 @@
+{
+  "skills": [
+    {
+      "category": "Programming languages",
+      "skills": ["JavaScript", "Python", "Julia"]
+    },
+    {
+      "category": "Frontend technologies",
+      "skills": ["HTML", "CSS", "React.js", "TailwindCSS", "Astro"]
+    },
+    {
+      "category": "Backend technologies",
+      "skills": ["Node.js", "Express.js", "Django"]
+    },
+    {
+      "category": "Data science and Scientific computing",
+      "skills": [
+        "Excel (Advanced with Macros)",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Jupyter Notebooks",
+        "Pluto Notebooks (Julia Notebooks)"
+      ]
+    },
+    {
+      "category": "Markup kanguages",
+      "skills": ["Markdown", "LaTeX"]
+    },
+    {
+      "category": "Game development",
+      "skills": ["Unreal Engine 5"]
+    },
+    {
+      "category": "Coding tools",
+      "skills": ["VSCode", "Git/Github"]
+    },
+    {
+      "category": "Creative coding",
+      "skills": ["p5.js"]
+    },
+    {
+      "category": "Art tools",
+      "skills": ["Photoshop", "Krita", "Illustrator", "Inkscape", "Blender"]
+    }
+  ]
+}
