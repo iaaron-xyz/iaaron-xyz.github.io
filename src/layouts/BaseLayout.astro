@@ -48,6 +48,14 @@ const currentPath =
             "font-bold text-black dark:text-white"}>blog</a
         >
       </div>
+      <div class="mt-4">
+        <p>My projects</p>
+        <a
+          href="/projects/frontend"
+          class={currentPath === "/projects/frontend" &&
+            "font-bold text-black dark:text-white"}>Front-end</a
+        >
+      </div>
       <div class="mt-auto mr-auto">
         <button id="theme-toggle"> M </button>
       </div>
@@ -86,9 +94,6 @@ const currentPath =
     nav {
       @apply flex flex-col h-screen font-mono p-10;
     }
-    nav a {
-      @apply px-6 mx-0;
-    }
     nav a:hover {
       @apply text-black dark:text-white;
     }
@@ -120,8 +125,13 @@ const currentPath =
     a {
       @apply font-mono text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white;
     }
-    button {
+    button,
+    .btn {
       @apply bg-slate-300 px-3 py-1 rounded-md dark:bg-slate-600;
+    }
+
+    .btn-line {
+      @apply border rounded-md border-slate-500 hover:bg-blue-600 hover:text-white hover:border-transparent dark:border-slate-500 dark:hover:bg-blue-700 dark:hover:border-transparent;
     }
   </style>
 

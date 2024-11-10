@@ -43,5 +43,19 @@
       "category": "Art tools",
       "skills": ["Photoshop", "Krita", "Illustrator", "Inkscape", "Blender"]
     }
+  ],
+  "projects": [
+    {
+      "title": "MemoryEmoji",
+      "description": "This is a memory game where you pick a card each turn without repeating previous choices. Win by selecting unique cards until the end; otherwise, you lose.",
+      "images": [
+        "https://raw.githubusercontent.com/iaaron-xyz/memory-game/master/README_files/game1.jpeg",
+        "https://raw.githubusercontent.com/iaaron-xyz/memory-game/master/README_files/game2.jpeg"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/memory-game",
+      "urlProject": "https://memory-emoji-cards.netlify.app",
+      "keywords": ["React.js", "TailwindCSS"],
+      "categories": ["front-end"]
+    }
   ]
 }

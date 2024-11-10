@@ -1,0 +1,18 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import { projects } from "@portfolio";
+---
+
+<section class="grid grid-cols-2 gap-16">
+  {
+    projects.map((project) => (
+      <ProjectCard
+        projectTitle={project.title}
+        projectDescription={project.description}
+        projectThumbnail={project.images[0]}
+        projectRepository={project.urlRepository}
+        projectSite={project.urlProject}
+      />
+    ))
+  }
+</section>
