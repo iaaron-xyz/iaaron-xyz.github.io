@@ -1,5 +1,6 @@
 ---
 import ProjectsSection from "./ProjectsSection.astro";
+const projectCategory = "front-end";
 ---
 
 <section class="aboutpage w-2/3">
@@ -9,4 +10,4 @@ import ProjectsSection from "./ProjectsSection.astro";
     and HTML.
   </p>
 </section>
-<ProjectsSection />
+<ProjectsSection projectCategory={projectCategory} />

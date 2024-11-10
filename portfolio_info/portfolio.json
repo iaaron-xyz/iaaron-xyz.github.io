@@ -56,6 +56,18 @@
       "urlProject": "https://memory-emoji-cards.netlify.app",
       "keywords": ["React.js", "TailwindCSS"],
       "categories": ["front-end"]
+    },
+    {
+      "title": "Your CV",
+      "description": "This a web application that allows you to create your own CV. Sections can be added, edited and deleted depending on the case.",
+      "images": [
+        "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_screenshot2.jpeg",
+        "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_scrennshot1.jpeg"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/cv-application",
+      "urlProject": "https://iaaron-xyz.github.io/cv-application/",
+      "keywords": ["React.js", "TailwindCSS"],
+      "categories": ["front-end"]
     }
   ]
 }

@@ -10,16 +10,18 @@ const {
 
 <div class="mb-10">
   <a href={projectSite} target="_blank">
-    <img src={projectThumbnail} alt="" />
+    <div class="overflow-hidden">
+      <img
+        src={projectThumbnail}
+        alt=""
+        class="h-96 w-full object-cover rounded-md transform transition-transform duration-300 hover:scale-110"
+      />
+    </div>
   </a>
   <div class="flex">
     <h3>{projectTitle}</h3>
     <div class="ml-auto mt-auto mb-4">
-      <a
-        href={projectRepository}
-        class="border px-2 py-1 rounded-md border-slate-500 hover:bg-blue-600 hover:text-white hover:border-transparent dark:border-slate-500 dark:hover:bg-blue-700 dark:hover:border-transparent"
-        >GIHUB</a
-      >
+      <a href={projectRepository} class="px-2 py-1 btn-line">GIHUB</a>
       <a href={projectSite} target="_blank" class="px-2 py-1 btn-line"
         >WEBSITE</a
       >
