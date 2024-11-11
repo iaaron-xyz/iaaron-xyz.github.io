@@ -3,9 +3,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <section class="blogpage">
-  <p>
-    If I found something interesting or useful to sahre, I will share i here!
-  </p>
+  <p>Here you can find tutorials or resources I find useful.</p>
   <ul class="mt-12 list-decimal font-inter-regular pl-12">
     {
       allPosts.map((post) => (

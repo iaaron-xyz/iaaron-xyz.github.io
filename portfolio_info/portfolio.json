@@ -59,7 +59,7 @@
     },
     {
       "title": "Your CV",
-      "description": "This a web application that allows you to create your own CV. Sections can be added, edited and deleted depending on the case.",
+      "description": "In this web application you can create and edit your own CV. You can add, edit and delete sections.",
       "images": [
         "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_screenshot2.jpeg",
         "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_scrennshot1.jpeg"
