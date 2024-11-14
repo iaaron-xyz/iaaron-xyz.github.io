@@ -34,26 +34,28 @@ const currentPath =
       <div>
         <a
           href="/"
-          class={currentPath === "/" && "font-bold text-black dark:text-white"}
-          >home</a
+          class={currentPath === "/" ? "navbar-link-active" : "navbar-link"}
+          >Home</a
         >
         <a
           href="/about"
-          class={currentPath === "/about" &&
-            "font-bold text-black dark:text-white"}>about</a
+          class={currentPath === "/about"
+            ? "navbar-link-active"
+            : "navbar-link"}>About</a
         >
         <a
           href="/blog"
-          class={currentPath === "/blog" &&
-            "font-bold text-black dark:text-white"}>blog</a
+          class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
+          >blog</a
         >
       </div>
       <div class="mt-4">
         <p>My projects</p>
         <a
           href="/projects/frontend"
-          class={currentPath === "/projects/frontend" &&
-            "font-bold text-black dark:text-white"}>Front-end</a
+          class={currentPath === "/projects/frontend"
+            ? "navbar-link-active"
+            : "navbar-link"}>Front-end</a
         >
       </div>
       <div class="mt-auto mr-auto">
@@ -123,7 +125,7 @@ const currentPath =
       @apply text-slate-500 dark:text-slate-400;
     }
     a {
-      @apply font-mono text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white;
+      @apply font-mono text-blue-600 hover:text-slate-900 dark:text-sky-400 dark:hover:text-white;
     }
     button,
     .btn {
@@ -132,6 +134,12 @@ const currentPath =
 
     .btn-line {
       @apply border rounded-md border-slate-500 hover:bg-blue-600 hover:text-white hover:border-transparent dark:border-slate-500 dark:hover:bg-blue-700 dark:hover:border-transparent;
+    }
+    .navbar-link {
+      @apply text-slate-500 dark:text-slate-400;
+    }
+    .navbar-link-active {
+      @apply font-bold text-black no-underline dark:text-white;
     }
   </style>
 
