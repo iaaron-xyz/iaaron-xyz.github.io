@@ -1,10 +1,12 @@
 ---
-import "../styles/global.css";
+import Navbar from "@/components/Navbar.astro";
 const { pageTitle, blogTitle } = Astro.props;
 const currentPath =
   Astro.url.pathname.slice(-1) === "/" && Astro.url.pathname.length > 1
     ? Astro.url.pathname.slice(0, -1)
     : Astro.url.pathname;
+
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -30,40 +32,10 @@ const currentPath =
 
   <body class="grid grid-cols-12">
     <!-- Navigation Bar -->
-    <nav class="col-span-2">
-      <div>
-        <a
-          href="/"
-          class={currentPath === "/" ? "navbar-link-active" : "navbar-link"}
-          >Home</a
-        >
-        <a
-          href="/about"
-          class={currentPath === "/about"
-            ? "navbar-link-active"
-            : "navbar-link"}>About</a
-        >
-        <a
-          href="/blog"
-          class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
-          >blog</a
-        >
-      </div>
-      <div class="mt-4">
-        <p>My projects</p>
-        <a
-          href="/projects/frontend"
-          class={currentPath === "/projects/frontend"
-            ? "navbar-link-active"
-            : "navbar-link"}>Front-end</a
-        >
-      </div>
-      <div class="mt-auto mr-auto">
-        <button id="theme-toggle"> M </button>
-      </div>
-    </nav>
+    <Navbar currentPath={currentPath} />
 
-    <main class="col-span-10">
+    <!-- Main content -->
+    <main class="md:col-span-9 lg:col-span-10">
       <!-- show current path -->
       {currentPath !== "/" && <p class="mb-2">{currentPath}</p>}
 

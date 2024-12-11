@@ -1,0 +1,37 @@
+---
+const { currentPath } = Astro.props;
+---
+
+<nav class="hidden md:flex md:col-span-3 lg:col-span-2">
+  <!-- Pages -->
+  <div>
+    <a
+      href="/"
+      class={currentPath === "/" ? "navbar-link-active" : "navbar-link"}>Home</a
+    >
+    <a
+      href="/about"
+      class={currentPath === "/about" ? "navbar-link-active" : "navbar-link"}
+      >About</a
+    >
+    <a
+      href="/blog"
+      class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
+      >Blog</a
+    >
+  </div>
+
+  <!-- Projects -->
+  <div class="mt-4">
+    <p>My projects</p>
+    <a
+      href="/projects/frontend"
+      class={currentPath === "/projects/frontend"
+        ? "navbar-link-active"
+        : "navbar-link"}>Front-end</a
+    >
+  </div>
+  <div class="mt-auto mr-auto">
+    <button id="theme-toggle"> M </button>
+  </div>
+</nav>
