@@ -111,10 +111,19 @@ import "../styles/global.css";
       @apply font-bold text-black no-underline dark:text-white;
     }
     .navbar-content {
-      @apply hidden md:flex flex-col;
+      @apply hidden md:flex flex-col h-full;
     }
     .navbar-show {
-      @apply flex w-full h-full z-50 absolute dark:bg-night;
+      @apply flex items-center w-full h-full z-30 absolute left-0 top-0 py-20 bg-white dark:bg-night;
+    }
+    .navbar-show a {
+      @apply text-4xl my-4;
+    }
+    .navbar-show p {
+      @apply text-4xl  mb-4 mt-10 text-slate-400 dark:text-slate-500;
+    }
+    .navbar-show button {
+      @apply text-4xl;
     }
   </style>
 
