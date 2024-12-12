@@ -66,16 +66,13 @@ import "../styles/global.css";
     }
     /* component classes */
     nav {
-      @apply flex flex-col md:h-screen font-mono p-10;
+      @apply font-mono p-6 md:h-screen md:p-10;
     }
     nav a:hover {
       @apply text-black dark:text-white;
     }
-    nav div {
-      @apply flex flex-col;
-    }
     main {
-      @apply border-none p-10 w-full h-screen overflow-y-auto;
+      @apply border-none p-10 w-full md:h-screen md:overflow-y-auto;
     }
     h2,
     h3,
@@ -113,10 +110,17 @@ import "../styles/global.css";
     .navbar-link-active {
       @apply font-bold text-black no-underline dark:text-white;
     }
+    .navbar-content {
+      @apply hidden md:flex flex-col;
+    }
+    .navbar-show {
+      @apply flex w-full h-full z-50 absolute dark:bg-night;
+    }
   </style>
 
   <!-- scripts -->
   <script>
     import "../scripts/themeToggle";
+    import "../scripts/navbarToggle";
   </script>
 </html>
