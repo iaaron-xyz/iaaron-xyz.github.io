@@ -5,8 +5,8 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout blogTitle={frontmatter.title}>
-  <div class="w-2/3">
-    <h2 class="text-slate-500 text-3xl">
+  <div class="w-full md:w-2/3">
+    <h2 class="text-slate-500 text-2xl md:text-3xl">
       {frontmatter.description}
     </h2>
     <section class="flex flex-col items-center">
