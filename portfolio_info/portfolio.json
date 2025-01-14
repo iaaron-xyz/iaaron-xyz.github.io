@@ -54,7 +54,18 @@
       ],
       "urlRepository": "https://github.com/iaaron-xyz/memory-game",
       "urlProject": "https://memory-emoji-cards.netlify.app",
-      "keywords": ["React.js", "TailwindCSS"],
+      "tags": [
+        {
+          "name": "React.js",
+          "textColor": "text-white",
+          "bgColor": "bg-sky-500"
+        },
+        {
+          "name": "TailwindCSS",
+          "textColor": "text-white",
+          "bgColor": "bg-blue-500"
+        }
+      ],
       "categories": ["front-end"]
     },
     {
@@ -66,7 +77,18 @@
       ],
       "urlRepository": "https://github.com/iaaron-xyz/cv-application",
       "urlProject": "https://iaaron-xyz.github.io/cv-application/",
-      "keywords": ["React.js", "TailwindCSS"],
+      "tags": [
+        {
+          "name": "React.js",
+          "textColor": "text-white",
+          "bgColor": "bg-sky-500"
+        },
+        {
+          "name": "TailwindCSS",
+          "textColor": "text-white",
+          "bgColor": "bg-blue-500"
+        }
+      ],
       "categories": ["front-end"]
     }
   ]
