@@ -33,7 +33,8 @@ const {
     {
       projectTags.map((tag) => (
         <span
-          class={`mr-2 px-2 py-1 rounded-md ${tag.bgColor} ${tag.textColor}`}
+          class="mr-2 px-2 py-1 rounded-md"
+          style={`background:${tag.bgColor}; color:${tag.textColor}`}
         >
           {tag.name}
         </span>

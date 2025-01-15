@@ -57,13 +57,13 @@
       "tags": [
         {
           "name": "React.js",
-          "textColor": "text-white",
-          "bgColor": "bg-sky-500"
+          "textColor": "royalblue",
+          "bgColor": "aqua"
         },
         {
           "name": "TailwindCSS",
-          "textColor": "text-white",
-          "bgColor": "bg-blue-500"
+          "textColor": "white",
+          "bgColor": "mediumturquoise"
         }
       ],
       "categories": ["front-end"]
@@ -80,13 +80,13 @@
       "tags": [
         {
           "name": "React.js",
-          "textColor": "text-white",
-          "bgColor": "bg-sky-500"
+          "textColor": "royalblue",
+          "bgColor": "aqua"
         },
         {
           "name": "TailwindCSS",
-          "textColor": "text-white",
-          "bgColor": "bg-blue-500"
+          "textColor": "white",
+          "bgColor": "mediumturquoise"
         }
       ],
       "categories": ["front-end"]
