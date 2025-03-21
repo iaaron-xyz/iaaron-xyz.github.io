@@ -2,7 +2,7 @@
   "skills": [
     {
       "category": "Programming languages",
-      "skills": ["JavaScript", "Python", "Julia"]
+      "skills": ["JavaScript", "Python", "Julia", "SQL"]
     },
     {
       "category": "Frontend technologies",
@@ -15,13 +15,16 @@
     {
       "category": "Data science and Scientific computing",
       "skills": [
-        "Excel (Advanced with Macros)",
         "NumPy",
         "Pandas",
         "Matplotlib",
         "Jupyter Notebooks",
         "Pluto Notebooks (Julia Notebooks)"
       ]
+    },
+    {
+      "category": "Data analysis",
+      "skills": ["Excel (Advanced with Macros)", "Power BI"]
     },
     {
       "category": "Markup kanguages",
@@ -45,6 +48,40 @@
     }
   ],
   "projects": [
+    {
+      "title": "All.do",
+      "description": "In this todo list weapp you can organize your tasks by project. This site supports dark mode. This project was implemented and developed with pure JavaSvript using npm, webpack and tailwindCSS.",
+      "images": [
+        "https://raw.githubusercontent.com/iaaron-xyz/todo-list/refs/heads/main/README_files/todolist_light.jpeg"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/todo-list",
+      "urlProject": "https://iaaron-xyz.github.io/todo-list/",
+      "tags": [
+        {
+          "name": "JavaScript",
+          "textColor": "black",
+          "bgColor": "gold"
+        }
+      ],
+      "categories": ["front-end"]
+    },
+    {
+      "title": "Thumbnail Downloader",
+      "description": "This site get any thumbnail in any YouTube using only the url. the site gives you the option to: download the image or copy the url of the thumbnail.",
+      "images": [
+        "https://raw.githubusercontent.com/iaaron-xyz/thumnbnail-downloader/refs/heads/master/README_files/yt-downloader-01.jpeg?token=GHSAT0AAAAAAC7IOCDEJ5STTBKMH7RSFSCEZ65DUOQ"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/thumnbnail-downloader",
+      "urlProject": "https://yt-thumbnails.netlify.app/",
+      "tags": [
+        {
+          "name": "Astro",
+          "textColor": "white",
+          "bgColor": "indigo"
+        }
+      ],
+      "categories": ["front-end"]
+    },
     {
       "title": "MemoryEmoji",
       "description": "This is a memory game where you pick a card each turn without repeating previous choices. Win by selecting unique cards until the end; otherwise, you lose.",
