@@ -69,7 +69,7 @@
       "title": "Thumbnail Downloader",
       "description": "This site get any thumbnail in any YouTube using only the url. the site gives you the option to: download the image or copy the url of the thumbnail.",
       "images": [
-        "https://raw.githubusercontent.com/iaaron-xyz/thumnbnail-downloader/refs/heads/master/README_files/yt-downloader-01.jpeg?token=GHSAT0AAAAAAC7IOCDEJ5STTBKMH7RSFSCEZ65DUOQ"
+        "https://raw.githubusercontent.com/iaaron-xyz/thumnbnail-downloader/refs/heads/master/README_files/yt-downloader-01.jpeg"
       ],
       "urlRepository": "https://github.com/iaaron-xyz/thumnbnail-downloader",
       "urlProject": "https://yt-thumbnails.netlify.app/",
