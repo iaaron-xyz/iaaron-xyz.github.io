@@ -1,9 +1,10 @@
 ---
 import Hamburger from "./Hamburger.astro";
 import NavContent from "./NavContent.astro";
+const { currentPath } = Astro.props;
 ---
 
 <nav class="md:col-span-3 lg:col-span-2">
   <Hamburger />
-  <NavContent />
+  <NavContent currentPath={currentPath} />
 </nav>
