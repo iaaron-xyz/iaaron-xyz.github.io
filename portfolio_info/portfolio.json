@@ -50,7 +50,7 @@
   "projects": [
     {
       "title": "All.do",
-      "description": "In this todo list weapp you can organize your tasks by project. This site supports dark mode. This project was implemented and developed with pure JavaSvript using npm, webpack and tailwindCSS.",
+      "description": "You can create To-Do lists and group them in projects or categories for a better organization. This web app supports dark mode and it was developed with JavaScript (no frameworks), Webpack and TailwindCSS.",
       "images": [
         "https://raw.githubusercontent.com/iaaron-xyz/todo-list/refs/heads/main/README_files/todolist_light.jpeg"
       ],
@@ -61,13 +61,18 @@
           "name": "JavaScript",
           "textColor": "black",
           "bgColor": "gold"
+        },
+        {
+          "name": "TailwindCSS",
+          "textColor": "black",
+          "bgColor": "mediumturquoise"
         }
       ],
       "categories": ["front-end"]
     },
     {
       "title": "Thumbnail Downloader",
-      "description": "This site get any thumbnail in any YouTube using only the url. the site gives you the option to: download the image or copy the url of the thumbnail.",
+      "description": "You can get any thumbnail of any YouTube video just by copying its url.",
       "images": [
         "https://raw.githubusercontent.com/iaaron-xyz/thumnbnail-downloader/refs/heads/master/README_files/yt-downloader-01.jpeg"
       ],
@@ -84,7 +89,7 @@
     },
     {
       "title": "MemoryEmoji",
-      "description": "This is a memory game where you pick a card each turn without repeating previous choices. Win by selecting unique cards until the end; otherwise, you lose.",
+      "description": "This is a memory game where you pick a card each turn without repeating previous choices. Win by selecting all the unique cards until the game ends; otherwise, you lose.",
       "images": [
         "https://raw.githubusercontent.com/iaaron-xyz/memory-game/master/README_files/game1.jpeg",
         "https://raw.githubusercontent.com/iaaron-xyz/memory-game/master/README_files/game2.jpeg"
@@ -94,12 +99,12 @@
       "tags": [
         {
           "name": "React.js",
-          "textColor": "royalblue",
-          "bgColor": "aqua"
+          "textColor": "white",
+          "bgColor": "dodgerblue"
         },
         {
           "name": "TailwindCSS",
-          "textColor": "white",
+          "textColor": "black",
           "bgColor": "mediumturquoise"
         }
       ],
@@ -107,7 +112,7 @@
     },
     {
       "title": "Your CV",
-      "description": "In this web application you can create and edit your own CV. You can add, edit and delete sections.",
+      "description": "In this web application you can create, edit, and export to pdf format your own CV, ready to be sent.",
       "images": [
         "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_screenshot2.jpeg",
         "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_scrennshot1.jpeg"
@@ -117,12 +122,12 @@
       "tags": [
         {
           "name": "React.js",
-          "textColor": "royalblue",
-          "bgColor": "aqua"
+          "textColor": "white",
+          "bgColor": "dodgerblue"
         },
         {
           "name": "TailwindCSS",
-          "textColor": "white",
+          "textColor": "black",
           "bgColor": "mediumturquoise"
         }
       ],
