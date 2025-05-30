@@ -1,20 +1,28 @@
 ---
+// Import the base layout component and global styles
 import BaseLayout from "./BaseLayout.astro";
 import "../styles/global.css";
+// Extract frontmatter data from markdown files via Astro.props
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout blogTitle={frontmatter.title}>
-  <div class="w-1/2 md:w-2/3">
+  {/* Main content container with responsive width */}
+  <div class="lg:w-2/3 w-full">
+    {/* Post description displayed as a subtitle */}
     <h2 class="text-slate-500 text-2xl md:text-3xl">
       {frontmatter.description}
     </h2>
+
+    {/* Post metadata section with publication dates */}
     <section class="flex flex-col items-center">
       <div class="my-16 self-start">
+        {/* Original publication date */}
         <p class="text-sm font-mono">
           Publication date: {frontmatter.pubDate.toString().slice(0, 10)}
         </p>
         {
+          /* Conditional rendering of update date if available */
           frontmatter.upDate && (
             <p class="text-sm font-mono">
               Updated: {frontmatter.upDate.toString().slice(0, 10)}
@@ -23,18 +31,23 @@ const { frontmatter } = Astro.props;
         }
       </div>
       {
+        /* Conditional rendering of featured image if URL is provided */
         frontmatter.image.url && (
           <div class="mr-auto">
             <img
               src={frontmatter.image.url}
               alt={frontmatter.image.alt}
-              class="w-1/2"
+              class="w-full h-auto rounded-lg shadow-lg"
+              loading="lazy"
+              width={frontmatter.image.width}
+              height={frontmatter.image.height}
             />
           </div>
         )
       }
     </section>
 
+    {/* Main content area where markdown content is rendered */}
     <section class="mt-16 font-inter-regular text-lg markdown-content">
       <slot />
     </section>
