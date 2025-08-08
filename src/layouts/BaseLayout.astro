@@ -41,7 +41,13 @@ import "../styles/global.css";
 
       <!-- Titles: Renders bases if it's for a page title or blog title -->
       {pageTitle && <h1>{pageTitle}</h1>}
-      {blogTitle && <h1 class="text-5xl md:text-6xl">{blogTitle}</h1>}
+      {
+        blogTitle && (
+          <h1 class="text-5xl md:text-6xl md:mt-24 capitalize lg:w-2/3">
+            {blogTitle}
+          </h1>
+        )
+      }
 
       <!-- Content -->
       <slot />
