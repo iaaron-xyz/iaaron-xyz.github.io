@@ -6,6 +6,7 @@ export default {
     extend: {
       backgroundColor: {
         night: "#161717",
+        "night-200": "#2f3131",
       },
       fontFamily: {
         "sentient-regular": ["Sentient-Regular", "serif"],
