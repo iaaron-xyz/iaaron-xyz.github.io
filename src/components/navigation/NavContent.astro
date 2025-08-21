@@ -23,12 +23,14 @@ const { currentPath } = Astro.props;
 
   <!-- Projects -->
   <div class="mt-4 text-center md:text-left">
-    <p>My projects</p>
+    <p class="text-xl">My projects</p>
     <a
       href="/projects/frontend"
       class={currentPath === "/projects/frontend"
         ? "navbar-link-active"
-        : "navbar-link"}>Front-end</a
+        : "navbar-link"}
+    >
+      Front-end</a
     >
   </div>
   <div class="mt-auto md:mr-auto md:flex">
