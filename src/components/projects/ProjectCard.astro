@@ -10,6 +10,18 @@ const {
 ---
 
 <div class="mb-10">
+  <!-- Top title -->
+  <div class="flex">
+    <h3>{projectTitle}</h3>
+    <div class="ml-auto my-auto">
+      <a href={projectRepository} class="px-2 py-1 btn-line">GITHUB</a>
+      <a href={projectSite} target="_blank" class="px-2 py-1 btn-line"
+        >LIVE DEMO</a
+      >
+    </div>
+  </div>
+
+  <!-- Thumbnail -->
   <a href={projectSite} target="_blank">
     <div class="overflow-hidden">
       <img
@@ -19,17 +31,10 @@ const {
       />
     </div>
   </a>
-  <div class="flex flex-col">
-    <h3>{projectTitle}</h3>
-    <div class="mt-2 mb-4">
-      <a href={projectRepository} class="px-2 py-1 btn-line">GITHUB</a>
-      <a href={projectSite} target="_blank" class="px-2 py-1 btn-line"
-        >LIVE DEMO</a
-      >
-    </div>
-  </div>
-  <p>{projectDescription}</p>
-  <div class="mt-2 text-sm">
+
+  <!-- Description -->
+  <p class="mt-4">{projectDescription}</p>
+  <div class="mt-4 text-sm">
     {
       projectTags.map((tag) => (
         <span
