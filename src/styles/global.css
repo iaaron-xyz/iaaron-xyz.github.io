@@ -37,3 +37,18 @@
     margin: -2px -6px;
     padding:  2px  6px;
 }
+.marker-teal-light {
+    @apply dark:text-slate-800;
+        background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=teal-300);
+        margin: -2px -6px;
+        padding:  2px  6px;
+}
+
+@layer components {
+    .marker-teal-dark {
+        @apply dark:text-slate-900;
+        background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=teal-400);
+        margin: -2px -6px;
+        padding:  2px  6px;
+    }
+}
