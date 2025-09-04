@@ -3,37 +3,27 @@ const { currentPath } = Astro.props;
 ---
 
 <!-- Pages -->
-<div class="navbar-content">
-  <div class="flex flex-col items-center md:items-start">
-    <a
-      href="/"
-      class={currentPath === "/" ? "navbar-link-active" : "navbar-link"}>Home</a
-    >
-    <a
-      href="/about"
-      class={currentPath === "/about" ? "navbar-link-active" : "navbar-link"}
-      >About</a
-    >
-    <a
-      href="/blog"
-      class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
-      >Blog</a
-    >
-  </div>
-
-  <!-- Projects -->
-  <div class="mt-4 text-center md:text-left">
-    <p class="text-md">My projects</p>
-    <a
-      href="/projects/frontend"
-      class={currentPath === "/projects/frontend"
-        ? "navbar-link-active"
-        : "navbar-link"}
-    >
-      Front-end</a
-    >
-  </div>
-  <div class="mt-auto md:mr-auto md:flex">
+<div class="navbar-content flex flex-col items-center">
+  <a
+    href="/"
+    class={currentPath === "/" ? "navbar-link-active" : "navbar-link"}>Home</a
+  >
+  <a
+    href="/about"
+    class={currentPath === "/about" ? "navbar-link-active" : "navbar-link"}
+    >About</a
+  >
+  <a
+    href="/blog"
+    class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
+    >Blog</a
+  >
+  <a
+    href="/projects/frontend"
+    class={currentPath === "/projects/frontend" ? "navbar-link-active" : "navbar-link"}
+    >Projects</a
+  >
+  <div class="mt-10 md:mt-0">
     <button id="theme-toggle"> M </button>
   </div>
 </div>
