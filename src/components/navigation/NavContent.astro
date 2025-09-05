@@ -14,14 +14,14 @@ const { currentPath } = Astro.props;
     >About</a
   >
   <a
-    href="/blog"
-    class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
-    >Blog</a
-  >
-  <a
     href="/projects/frontend"
     class={currentPath === "/projects/frontend" ? "navbar-link-active" : "navbar-link"}
     >Projects</a
+  >
+  <a
+    href="/blog"
+    class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
+    >Blog</a
   >
   <div class="mt-10 md:mt-0">
     <button id="theme-toggle"> M </button>

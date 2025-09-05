@@ -35,9 +35,9 @@ import "../styles/global.css";
     <Navbar currentPath={currentPath} />
 
     <!-- Main content -->
-    <main class="w-full">
+    <main class="w-full flex flex-col items-center">
       <!-- show current path -->
-      {currentPath !== "/" && <p class="mb-2">{currentPath}</p>}
+      {currentPath !== "/" && <p class="mb-2 self-start">{currentPath}</p>}
 
       <!-- Titles: Renders bases if it's for a page title or blog title -->
       {pageTitle && <h1>{pageTitle}</h1>}
