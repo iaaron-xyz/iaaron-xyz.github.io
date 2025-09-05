@@ -3,6 +3,10 @@ export default {
   darkMode: "class",
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    screens: {
+      'lg':'1025px',
+      'md':'781px'
+    },
     extend: {
       backgroundColor: {
         night: "#161717",
