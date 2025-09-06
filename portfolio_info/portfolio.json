@@ -140,14 +140,14 @@
       "title": "Front-end Projects",
       "description": "Projects developed with front-end technologies.",
       "thumbnail": "https://placehold.co/600x400/orange/white?text=Frontend",
-      "path": "projects/frontend"
+      "path": "/projects/frontend"
     },
     {
       "name": "creative-coding",
       "title": "Creative Coding",
       "description": "All my generative art and creative coding projects.",
       "thumbnail": "https://placehold.co/600x400/orange/white?text=CreativeCoding",
-      "path": "projects/creative-coding"
+      "path": "/projects/creative-coding"
     }
   ]
 }
