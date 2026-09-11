@@ -2,8 +2,9 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import ProjectsCreativeCoding from "@/components/projects/categories/CategoryCreativeCoding.astro";
 const pageTitle = "Creative Coding Projects";
+const metaDescription = "Generative art and creative coding experiments by Aaron using p5.js, Processing, and JavaScript.";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} metaDescription={metaDescription}>
   <ProjectsCreativeCoding />
 </BaseLayout>

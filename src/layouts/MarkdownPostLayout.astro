@@ -4,9 +4,10 @@ import BaseLayout from "./BaseLayout.astro";
 import "../styles/global.css";
 // Extract frontmatter data from markdown files via Astro.props
 const { frontmatter } = Astro.props;
+const metaDescription = frontmatter.description;
 ---
 
-<BaseLayout blogTitle={frontmatter.title}>
+<BaseLayout blogTitle={frontmatter.title} metaDescription={metaDescription}>
   {/* Main content container with responsive width */}
   <div class="w-full">
     {/* Post description displayed as a subtitle */}

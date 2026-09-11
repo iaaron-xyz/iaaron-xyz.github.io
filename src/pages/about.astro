@@ -3,8 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Aboutpage from "../components/Aboutpage.astro";
 
 const pageTitle = "ABOUT";
+const metaDescription = "About Aaron — physicist with strong analytical and programming skills, transitioning into data science and AI engineering.";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} metaDescription={metaDescription}>
   <Aboutpage />
 </BaseLayout>

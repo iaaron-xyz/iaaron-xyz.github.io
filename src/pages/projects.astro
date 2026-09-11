@@ -3,8 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import MyProjects from "../components/Projects.astro";
 
 const pageTitle = "Projects";
+const metaDescription = "Front-end builds, creative coding experiments, data science, and scientific computing projects by Aaron.";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} metaDescription={metaDescription}>
   <MyProjects />
 </BaseLayout>

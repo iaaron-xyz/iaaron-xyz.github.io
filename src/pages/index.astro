@@ -2,8 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Homepage from "../components/Homepage.astro";
 const pageTitle = "iAARON";
+const metaTitle = "Home | iaaron — physicist, developer & artist";
+const metaDescription = "Portfolio of Aaron — physicist, developer, and artist blending science, art, and technology through data science, creative coding, and 3D art.";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout
+  pageTitle={pageTitle}
+  metaTitle={metaTitle}
+  metaDescription={metaDescription}
+>
   <Homepage />
 </BaseLayout>

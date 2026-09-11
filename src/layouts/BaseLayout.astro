@@ -1,10 +1,24 @@
 ---
 import Navbar from "@/components/navigation/Navigation.astro";
-const { pageTitle, blogTitle } = Astro.props;
+const { pageTitle, blogTitle, metaDescription, metaTitle } = Astro.props;
 const currentPath =
   Astro.url.pathname.slice(-1) === "/" && Astro.url.pathname.length > 1
     ? Astro.url.pathname.slice(0, -1)
     : Astro.url.pathname;
+
+const siteTitle = "iaaron — physicist, developer & artist";
+const title =
+  metaTitle ||
+  (blogTitle
+    ? `${blogTitle} | iaaron`
+    : pageTitle
+      ? `${pageTitle} | iaaron`
+      : siteTitle);
+const description =
+  metaDescription ||
+  "Portfolio of Aaron — physicist, developer, and artist blending science, art, and technology.";
+// NOTE: this base should match `site` in astro.config.mjs (pending update)
+const canonicalURL = new URL(Astro.url.pathname, "https://iaaron-xyz.github.io");
 
 import "../styles/global.css";
 ---
@@ -27,15 +41,30 @@ import "../styles/global.css";
     <link rel="icon" type="image/png" href="/kb16.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Homepage | iaaron</title>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="iaaron" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
   </head>
 
   <body class="flex flex-col">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-2 focus:bg-white focus:text-black">Skip to content</a>
     <!-- Navigation Bar -->
     <Navbar currentPath={currentPath} />
 
     <!-- Main content -->
-    <main class="w-full flex flex-col items-center">
+    <main id="main-content" class="w-full flex flex-col items-center">
       <!-- show current path -->
       {currentPath !== "/" && <p class="mb-2 self-start">{currentPath}</p>}
 
@@ -130,6 +159,19 @@ import "../styles/global.css";
     }
     .navbar-show button {
       @apply text-4xl;
+    }
+
+    /* Accessibility */
+    .sr-only {
+      @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    /* Bot protection — obfuscate contact info */
+    .contact-email {
+      unicode-bidi: bidi-override;
+      direction: rtl;
     }
   </style>
 

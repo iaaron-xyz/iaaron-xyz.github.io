@@ -2,8 +2,9 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Blogpage from "../components/Blogpage.astro";
 const pageTitle = "BLOG";
+const metaDescription = "Tutorials and resources on Astro, web development, scientific computing, and creative coding by Aaron.";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} metaDescription={metaDescription}>
   <Blogpage />
 </BaseLayout>
