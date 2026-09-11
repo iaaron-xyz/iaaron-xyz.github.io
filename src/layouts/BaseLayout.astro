@@ -73,10 +73,10 @@ import "../styles/global.css";
       {currentPath !== "/" && <p class="mb-2 self-start">{currentPath}</p>}
 
       <!-- Titles: Renders bases if it's for a page title or blog title -->
-      {pageTitle && <h1>{pageTitle}</h1>}
+      {pageTitle && <h1 data-scramble>{pageTitle}</h1>}
       {
         blogTitle && (
-          <h1 class="text-5xl md:text-6xl md:mt-24 capitalize lg:w-2/3">
+          <h1 data-scramble class="text-5xl md:text-6xl md:mt-24 capitalize lg:w-2/3">
             {blogTitle}
           </h1>
         )
@@ -184,5 +184,6 @@ import "../styles/global.css";
   <script>
     import "../scripts/themeToggle";
     import "../scripts/navbarToggle";
+    import "../scripts/scrambleHeading";
   </script>
 </html>
