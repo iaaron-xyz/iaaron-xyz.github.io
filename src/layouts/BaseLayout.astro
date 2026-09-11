@@ -17,8 +17,8 @@ const title =
 const description =
   metaDescription ||
   "Portfolio of Aaron — physicist, developer, and artist blending science, art, and technology.";
-// NOTE: this base should match `site` in astro.config.mjs (pending update)
-const canonicalURL = new URL(Astro.url.pathname, "https://iaaron-xyz.github.io");
+// canonical URL — built from the `site` set in astro.config.mjs
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 import "../styles/global.css";
 ---

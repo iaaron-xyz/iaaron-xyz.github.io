@@ -1,0 +1,26 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const pageTitle = "404";
+const metaTitle = "Page not found | iaaron";
+const metaDescription =
+  "Oops, this page doesn't exist. Explore the portfolio of Aaron - physicist, developer, and artist.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  metaTitle={metaTitle}
+  metaDescription={metaDescription}
+>
+  <section class="aboutpage w-full md:w-2/4">
+    <p class="my-8">
+      That page doesn't exist. Maybe it moved, or you followed a broken link.
+    </p>
+    <ul class="my-8 list-disc pl-8">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </section>
+</BaseLayout>
