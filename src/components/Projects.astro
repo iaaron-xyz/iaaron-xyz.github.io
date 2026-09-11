@@ -1,11 +1,161 @@
 ---
-import ProjectCategories from "./projects/ProjectCategories.astro";
+import ProjectCard from "./projects/ProjectCard.astro";
+import { projects, projectCategories } from "@portfolio";
+
+// Unique tags derived from all projects
+const allTags = [
+  ...new Set(projects.flatMap((p) => p.tags.map((t) => t.name))),
+];
 ---
 
 <section class="aboutpage w-full md:w-2/4">
   <p class="my-8">
-    A growing collection of front-end builds and creative coding experiments,
-    with a few placeholder cards ready for my next real projects.
+    A growing collection of front-end builds and creative coding experiments.
+    Use the filters below to explore my projects by category and technology.
   </p>
 </section>
-<ProjectCategories />
+
+<!-- Category filter -->
+<div class="my-1">
+  <h2
+    class="text-sm uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500 mb-3"
+  >
+    Filter by category
+  </h2>
+  <div class="flex flex-wrap gap-2">
+    {
+      projectCategories.map((cat) => (
+        <button
+          type="button"
+          class="filter-btn filter-category btn-line px-3 py-1"
+          data-filter-category={cat.name}
+          aria-pressed="false"
+        >
+          {cat.title}
+        </button>
+      ))
+    }
+  </div>
+</div>
+
+<!-- Technology/tag filter -->
+<div class="mb-6">
+  <h2
+    class="text-sm uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500 mb-3"
+  >
+    Filter by technology
+  </h2>
+  <div class="flex flex-wrap gap-2">
+    {
+      allTags.map((tag) => (
+        <button
+          type="button"
+          class="filter-btn filter-tag btn-line px-3 py-1"
+          data-filter-tag={tag}
+          aria-pressed="false"
+        >
+          {tag}
+        </button>
+      ))
+    }
+    <button
+      type="button"
+      id="clear-filters"
+      class="btn-line px-3 py-1 opacity-60 hover:opacity-100"
+    >
+      Clear filters
+    </button>
+  </div>
+</div>
+
+<!-- Projects grid -->
+<section
+  id="project-grid"
+  class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+>
+  {
+    projects.map((project) => (
+      <article
+        class="project-card h-full w-full min-w-0"
+        data-categories={project.categories.join(",")}
+        data-tags={project.tags.map((t) => t.name).join(",")}
+      >
+        <ProjectCard
+          projectTitle={project.title}
+          projectDescription={project.description}
+          projectThumbnail={project.images[0]}
+          projectRepository={project.urlRepository}
+          projectSite={project.urlProject}
+          projectTags={project.tags}
+        />
+      </article>
+    ))
+  }
+</section>
+
+<!-- Empty state -->
+<p id="project-empty" class="hidden my-10">
+  No projects match your filters. Try removing some selections.
+</p>
+
+<style>
+  .filter-btn.filter-active {
+    @apply bg-blue-600 text-white border-transparent hover:bg-blue-600 hover:text-white hover:border-transparent dark:bg-blue-700 dark:hover:bg-blue-700;
+  }
+</style>
+
+<script>
+  const categoryButtons = [...document.querySelectorAll(".filter-category")];
+  const tagButtons = [...document.querySelectorAll(".filter-tag")];
+  const cards = [...document.querySelectorAll(".project-card")];
+  const emptyMessage = document.getElementById("project-empty");
+  const clearButton = document.getElementById("clear-filters");
+
+  const selected = { categories: new Set(), tags: new Set() };
+
+  function applyFilters() {
+    let visibleCount = 0;
+    cards.forEach((card) => {
+      const cats = card.dataset.categories.split(",");
+      const tags = card.dataset.tags.split(",");
+      const matchCats = [...selected.categories].every((c) => cats.includes(c));
+      const matchTags = [...selected.tags].every((t) => tags.includes(t));
+      const visible = matchCats && matchTags;
+      card.classList.toggle("hidden", !visible);
+      if (visible) visibleCount++;
+    });
+    emptyMessage?.classList.toggle("hidden", visibleCount > 0);
+  }
+
+  function bind(filterButtons, group) {
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const value = btn.dataset.filterTag ?? btn.dataset.filterCategory;
+        const set = selected[group];
+        if (set.has(value)) {
+          set.delete(value);
+          btn.classList.remove("filter-active");
+          btn.setAttribute("aria-pressed", "false");
+        } else {
+          set.add(value);
+          btn.classList.add("filter-active");
+          btn.setAttribute("aria-pressed", "true");
+        }
+        applyFilters();
+      });
+    });
+  }
+
+  bind(categoryButtons, "categories");
+  bind(tagButtons, "tags");
+
+  clearButton?.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach((btn) => {
+      btn.classList.remove("filter-active");
+      btn.setAttribute("aria-pressed", "false");
+    });
+    selected.categories.clear();
+    selected.tags.clear();
+    applyFilters();
+  });
+</script>

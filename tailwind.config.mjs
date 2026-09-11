@@ -4,8 +4,11 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     screens: {
-      'lg':'1025px',
-      'md':'781px'
+      xl: "1200px",
+      lg: "800px",
+      md: "641px",
+      sm: "481px",
+      xs: "321px",
     },
     extend: {
       backgroundColor: {

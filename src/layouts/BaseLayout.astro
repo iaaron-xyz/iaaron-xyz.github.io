@@ -59,7 +59,11 @@ import "../styles/global.css";
   </head>
 
   <body class="flex flex-col">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-2 focus:bg-white focus:text-black">Skip to content</a>
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-2 focus:bg-white focus:text-black"
+      >Skip to content</a
+    >
     <!-- Navigation Bar -->
     <Navbar currentPath={currentPath} />
 
@@ -107,7 +111,7 @@ import "../styles/global.css";
       @apply text-black dark:text-white;
     }
     main {
-      @apply border-none w-full p-10 md:px-24 lg:px-72;
+      @apply border-none w-full p-10 lg:px-24 xl:px-64;
     }
     h2,
     h3,
@@ -154,7 +158,8 @@ import "../styles/global.css";
     .navbar-show a {
       @apply text-4xl my-4;
     }
-    .navbar-show span, .navbar-show p {
+    .navbar-show span,
+    .navbar-show p {
       @apply text-4xl mb-4 mt-10 text-slate-400 dark:text-slate-500;
     }
     .navbar-show button {
