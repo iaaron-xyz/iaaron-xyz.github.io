@@ -1,0 +1,16 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProjectsSection from "@/components/projects/ProjectsSection.astro";
+const pageTitle = "Scientific Computing Projects";
+const projectCategory = "scientific-computing";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class="aboutpage w-full md:w-2/4">
+    <p class="my-8">
+      Experiments and tools built around numerical methods, simulations, and
+      scientific modeling.
+    </p>
+  </section>
+  <ProjectsSection projectCategory={projectCategory} />
+</BaseLayout>

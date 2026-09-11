@@ -1,0 +1,16 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProjectsSection from "@/components/projects/ProjectsSection.astro";
+const pageTitle = "Data Science and Data Analytics";
+const projectCategory = "data-science";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class="aboutpage w-full md:w-2/4">
+    <p class="my-8">
+      Projects focused on analysis, visualization, and turning data into clear
+      insights.
+    </p>
+  </section>
+  <ProjectsSection projectCategory={projectCategory} />
+</BaseLayout>

@@ -132,6 +132,94 @@
         }
       ],
       "categories": ["front-end", "creative-coding"]
+    },
+    {
+      "title": "Studio Dashboard",
+      "description": "A polished dashboard concept for tracking personal projects, habits, and notes. This card is a placeholder and will be replaced with a real finished product soon.",
+      "images": [
+        "https://placehold.co/1200x800/111827/f5f5f5?text=Dashboard+Coming+Soon"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
+      "urlProject": "https://example.com",
+      "tags": [
+        {
+          "name": "Astro",
+          "textColor": "white",
+          "bgColor": "indigo"
+        },
+        {
+          "name": "TailwindCSS",
+          "textColor": "black",
+          "bgColor": "mediumturquoise"
+        }
+      ],
+      "categories": ["front-end"]
+    },
+    {
+      "title": "Procedural Playground",
+      "description": "An experimental creative coding sketch focused on motion, color, and generative patterns. The content here is a temporary placeholder for a future release.",
+      "images": [
+        "https://placehold.co/1200x800/2d3748/f5f5f5?text=Creative+Coding+Coming+Soon"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
+      "urlProject": "https://example.com",
+      "tags": [
+        {
+          "name": "p5.js",
+          "textColor": "white",
+          "bgColor": "deeppink"
+        },
+        {
+          "name": "JavaScript",
+          "textColor": "black",
+          "bgColor": "gold"
+        }
+      ],
+      "categories": ["creative-coding"]
+    },
+    {
+      "title": "Data Story Lab",
+      "description": "A placeholder data analysis project for visualizing trends, dashboards, and insights from different datasets. This will be replaced with a real portfolio piece soon.",
+      "images": [
+        "https://placehold.co/1200x800/0f766e/f5f5f5?text=Data+Science+Coming+Soon"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
+      "urlProject": "https://example.com",
+      "tags": [
+        {
+          "name": "Python",
+          "textColor": "white",
+          "bgColor": "royalblue"
+        },
+        {
+          "name": "Pandas",
+          "textColor": "black",
+          "bgColor": "lightgreen"
+        }
+      ],
+      "categories": ["data-science"]
+    },
+    {
+      "title": "Model Sandbox",
+      "description": "A placeholder scientific computing experiment for numerical methods, simulations, and mathematical modeling. This section will soon host fully realized projects.",
+      "images": [
+        "https://placehold.co/1200x800/4338ca/f5f5f5?text=Scientific+Computing+Coming+Soon"
+      ],
+      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
+      "urlProject": "https://example.com",
+      "tags": [
+        {
+          "name": "Julia",
+          "textColor": "white",
+          "bgColor": "purple"
+        },
+        {
+          "name": "NumPy",
+          "textColor": "black",
+          "bgColor": "aqua"
+        }
+      ],
+      "categories": ["scientific-computing"]
     }
   ],
   "projectCategories": [
@@ -148,6 +236,20 @@
       "description": "All my generative art and creative coding projects.",
       "thumbnail": "https://placehold.co/600x400/orange/white?text=CreativeCoding",
       "path": "/projects/creative-coding"
+    },
+    {
+      "name": "data-science",
+      "title": "Data Science and Data Analytics",
+      "description": "Projects focused on analysis, visualization, and turning data into clear insights.",
+      "thumbnail": "https://placehold.co/600x400/0f766e/white?text=Data+Science",
+      "path": "/projects/data-science"
+    },
+    {
+      "name": "scientific-computing",
+      "title": "Scientific Computing Projects",
+      "description": "Experiments and tools built around numerical methods, simulations, and scientific modeling.",
+      "thumbnail": "https://placehold.co/600x400/4338ca/white?text=Scientific+Computing",
+      "path": "/projects/scientific-computing"
     }
   ]
 }

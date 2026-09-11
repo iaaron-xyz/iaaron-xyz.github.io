@@ -1,29 +1,25 @@
 ---
-const {
-    categoryTitle,
-    categoryDescription,
-    categoryThumbnail,
-    categoryPath,
-} = Astro.props;
+const { categoryTitle, categoryDescription, categoryThumbnail, categoryPath } =
+  Astro.props;
 ---
 
-<div class="mb-10">
-  <!-- Top title -->
-  <div class="flex">
-    <h3>{categoryTitle}</h3>
+<div
+  class="h-full w-full min-w-0 rounded-xl border border-white/10 bg-white/5 p-3 shadow-sm backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1"
+>
+  <div class="flex items-center justify-between gap-2">
+    <h3 class="text-base font-semibold">{categoryTitle}</h3>
+    <span class="text-xs uppercase tracking-[0.2em] text-white/70">Open</span>
   </div>
 
-  <!-- Thumbnail -->
-  <a href={categoryPath}>
-    <div class="overflow-hidden">
+  <a href={categoryPath} class="mt-3 block">
+    <div class="overflow-hidden rounded-md">
       <img
         src={categoryThumbnail}
         alt=""
-        class="h-60 md:h-96 w-full object-cover transform transition-transform duration-300 hover:scale-110"
+        class="h-36 sm:h-40 md:h-44 w-full object-cover transform transition-transform duration-300 hover:scale-110"
       />
     </div>
   </a>
 
-  <!-- Description -->
-  <p class="mt-4">{categoryDescription}</p>
+  <p class="mt-3 text-sm leading-6">{categoryDescription}</p>
 </div>
