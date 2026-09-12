@@ -1,11 +1,13 @@
 ---
 import ProjectCard from "./projects/ProjectCard.astro";
-import { projects, projectCategories } from "@portfolio";
+import { projects } from "@portfolio";
 
 // Unique tags derived from all projects
 const allTags = [
   ...new Set(projects.flatMap((p) => p.tags.map((t) => t.name))),
 ];
+
+const allCategories = [...new Set(projects.flatMap((p) => p.categories))];
 ---
 
 <section class="aboutpage w-full md:w-2/4">
@@ -25,14 +27,14 @@ const allTags = [
   </h2>
   <div class="flex flex-wrap gap-2">
     {
-      projectCategories.map((cat) => (
+      allCategories.map((cat) => (
         <button
           type="button"
           class="filter-btn filter-category btn-line px-3 py-1"
-          data-filter-category={cat.name}
+          data-filter-category={cat}
           aria-pressed="false"
         >
-          {cat.title}
+          {cat}
         </button>
       ))
     }

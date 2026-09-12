@@ -4,9 +4,8 @@ const { currentPath } = Astro.props;
 
 <!-- Pages -->
 <div class="navbar-content flex flex-col items-center">
-  <a
-    href="/"
-    class={currentPath === "/" ? "navbar-link-active" : "navbar-link"}>Home</a
+  <a href="/" class={currentPath === "/" ? "navbar-link-active" : "navbar-link"}
+    >Home</a
   >
   <a
     href="/about"
@@ -17,11 +16,6 @@ const { currentPath } = Astro.props;
     href="/projects"
     class={currentPath === "/projects" ? "navbar-link-active" : "navbar-link"}
     >Projects</a
-  >
-  <a
-    href="/blog"
-    class={currentPath === "/blog" ? "navbar-link-active" : "navbar-link"}
-    >Blog</a
   >
   <div class="mt-10 md:mt-0">
     <button id="theme-toggle" aria-label="Toggle dark mode"> M </button>

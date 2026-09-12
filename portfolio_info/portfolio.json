@@ -68,7 +68,7 @@
           "bgColor": "mediumturquoise"
         }
       ],
-      "categories": ["front-end"]
+      "categories": ["Front-end"]
     },
     {
       "title": "Thumbnail Downloader",
@@ -85,7 +85,7 @@
           "bgColor": "indigo"
         }
       ],
-      "categories": ["front-end"]
+      "categories": ["Front-end"]
     },
     {
       "title": "MemoryEmoji",
@@ -108,7 +108,7 @@
           "bgColor": "mediumturquoise"
         }
       ],
-      "categories": ["front-end"]
+      "categories": ["Front-end"]
     },
     {
       "title": "Your CV",
@@ -131,101 +131,41 @@
           "bgColor": "mediumturquoise"
         }
       ],
-      "categories": ["front-end", "creative-coding"]
+      "categories": ["Front-end"]
     },
     {
-      "title": "Studio Dashboard",
-      "description": "A polished dashboard concept for tracking personal projects, habits, and notes. This card is a placeholder and will be replaced with a real finished product soon.",
+      "title": "Understanding the Next Summer Olmpics",
+      "description": "A dashboard created in Tableau to understand the key trends in the Olympic Games throug the years. This is a personal project to understand the data and trends of the Olympic Games through data visualization.",
       "images": [
-        "https://placehold.co/1200x800/111827/f5f5f5?text=Dashboard+Coming+Soon"
+        "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_screenshot2.jpeg",
+        "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_scrennshot1.jpeg"
       ],
-      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
-      "urlProject": "https://example.com",
+      "urlRepository": "https://github.com/iaaron-xyz/cv-application",
+      "urlProject": "https://iaaron-xyz.github.io/cv-application/",
       "tags": [
         {
-          "name": "Astro",
-          "textColor": "white",
-          "bgColor": "indigo"
+          "name": "Tableau",
+          "textColor": "Blue",
+          "bgColor": "White"
         },
         {
-          "name": "TailwindCSS",
-          "textColor": "black",
-          "bgColor": "mediumturquoise"
-        }
-      ],
-      "categories": ["front-end"]
-    },
-    {
-      "title": "Procedural Playground",
-      "description": "An experimental creative coding sketch focused on motion, color, and generative patterns. The content here is a temporary placeholder for a future release.",
-      "images": [
-        "https://placehold.co/1200x800/2d3748/f5f5f5?text=Creative+Coding+Coming+Soon"
-      ],
-      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
-      "urlProject": "https://example.com",
-      "tags": [
-        {
-          "name": "p5.js",
-          "textColor": "white",
-          "bgColor": "deeppink"
+          "name": "Excel",
+          "textColor": "White",
+          "bgColor": "Green"
         },
         {
-          "name": "JavaScript",
-          "textColor": "black",
-          "bgColor": "gold"
+          "name": "Data visualization",
+          "textColor": "Blue",
+          "bgColor": "White"
         }
       ],
-      "categories": ["creative-coding"]
-    },
-    {
-      "title": "Data Story Lab",
-      "description": "A placeholder data analysis project for visualizing trends, dashboards, and insights from different datasets. This will be replaced with a real portfolio piece soon.",
-      "images": [
-        "https://placehold.co/1200x800/0f766e/f5f5f5?text=Data+Science+Coming+Soon"
-      ],
-      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
-      "urlProject": "https://example.com",
-      "tags": [
-        {
-          "name": "Python",
-          "textColor": "white",
-          "bgColor": "royalblue"
-        },
-        {
-          "name": "Pandas",
-          "textColor": "black",
-          "bgColor": "lightgreen"
-        }
-      ],
-      "categories": ["data-science"]
-    },
-    {
-      "title": "Model Sandbox",
-      "description": "A placeholder scientific computing experiment for numerical methods, simulations, and mathematical modeling. This section will soon host fully realized projects.",
-      "images": [
-        "https://placehold.co/1200x800/4338ca/f5f5f5?text=Scientific+Computing+Coming+Soon"
-      ],
-      "urlRepository": "https://github.com/iaaron-xyz/coming-soon",
-      "urlProject": "https://example.com",
-      "tags": [
-        {
-          "name": "Julia",
-          "textColor": "white",
-          "bgColor": "purple"
-        },
-        {
-          "name": "NumPy",
-          "textColor": "black",
-          "bgColor": "aqua"
-        }
-      ],
-      "categories": ["scientific-computing"]
+      "categories": ["Data Analytics"]
     }
   ],
   "projectCategories": [
     {
       "name": "front-end",
-      "title": "Front-end Projects",
+      "title": "Front-end",
       "description": "Projects developed with front-end technologies.",
       "thumbnail": "https://placehold.co/600x400/orange/white?text=Frontend",
       "path": "/projects/frontend"
@@ -239,14 +179,21 @@
     },
     {
       "name": "data-science",
-      "title": "Data Science and Data Analytics",
+      "title": "Data Science",
+      "description": "Projects focused on analysis, visualization, and turning data into clear insights.",
+      "thumbnail": "https://placehold.co/600x400/0f766e/white?text=Data+Science",
+      "path": "/projects/data-science"
+    },
+    {
+      "name": "data-analytics",
+      "title": "Data Analytics",
       "description": "Projects focused on analysis, visualization, and turning data into clear insights.",
       "thumbnail": "https://placehold.co/600x400/0f766e/white?text=Data+Science",
       "path": "/projects/data-science"
     },
     {
       "name": "scientific-computing",
-      "title": "Scientific Computing Projects",
+      "title": "Scientific Computing",
       "description": "Experiments and tools built around numerical methods, simulations, and scientific modeling.",
       "thumbnail": "https://placehold.co/600x400/4338ca/white?text=Scientific+Computing",
       "path": "/projects/scientific-computing"
