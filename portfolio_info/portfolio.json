@@ -49,6 +49,28 @@
   ],
   "projects": [
     {
+      "title": "Understanding the Next Summer Olmpics",
+      "description": "A dashboard created in Tableau to understand the key trends in the Olympic Games throug the years using data visualization.",
+      "images": [
+        "https://raw.githubusercontent.com/iaaron-xyz/projects-list/main/assets/next_olympics_01.jpeg"
+      ],
+      "urlRepository": "",
+      "urlProject": "https://public.tableau.com/app/profile/aaron.ap/viz/UnderstandingthenextSummerOlympics/OlympicsOverTime",
+      "tags": [
+        {
+          "name": "Excel",
+          "textColor": "white",
+          "bgColor": "Green"
+        },
+        {
+          "name": "Tableau",
+          "textColor": "blue",
+          "bgColor": "White"
+        }
+      ],
+      "categories": ["Data Analytics"]
+    },
+    {
       "title": "All.do",
       "description": "You can create To-Do lists and group them in projects or categories for a better organization. This web app supports dark mode and it was developed with JavaScript (no frameworks), Webpack and TailwindCSS.",
       "images": [
@@ -132,34 +154,6 @@
         }
       ],
       "categories": ["Front-end"]
-    },
-    {
-      "title": "Understanding the Next Summer Olmpics",
-      "description": "A dashboard created in Tableau to understand the key trends in the Olympic Games throug the years. This is a personal project to understand the data and trends of the Olympic Games through data visualization.",
-      "images": [
-        "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_screenshot2.jpeg",
-        "https://raw.githubusercontent.com/iaaron-xyz/cv-application/master/README_files/cv_scrennshot1.jpeg"
-      ],
-      "urlRepository": "https://github.com/iaaron-xyz/cv-application",
-      "urlProject": "https://iaaron-xyz.github.io/cv-application/",
-      "tags": [
-        {
-          "name": "Tableau",
-          "textColor": "Blue",
-          "bgColor": "White"
-        },
-        {
-          "name": "Excel",
-          "textColor": "White",
-          "bgColor": "Green"
-        },
-        {
-          "name": "Data visualization",
-          "textColor": "Blue",
-          "bgColor": "White"
-        }
-      ],
-      "categories": ["Data Analytics"]
     }
   ],
   "projectCategories": [
